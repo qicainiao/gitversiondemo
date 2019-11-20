@@ -1,6 +1,6 @@
 {
   "name": "juanziaaa",
-  "version": "8.0.5",
+  "version": "1.0.0",
   "description": "Mobile UI Components built on Vue",
   "main": "lib/index.js",
   "module": "es/index.js",
