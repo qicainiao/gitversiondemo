@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Sidebar, SidebarItem } from 'vant';
+import { Sidebar, SidebarItem } from 'jyt';
 
 Vue.use(Sidebar);
 Vue.use(SidebarItem);
@@ -15,11 +15,11 @@ Vue.use(SidebarItem);
 ### Basic Usage
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-</van-sidebar>
+<jy-sidebar v-model="activeKey">
+  <jy-sidebar-item title="Title" />
+  <jy-sidebar-item title="Title" />
+  <jy-sidebar-item title="Title" />
+</jy-sidebar>
 ```
 
 ``` javascript
@@ -35,21 +35,21 @@ export default {
 ### Show Info
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" dot />
-  <van-sidebar-item title="Title" info="5" />
-  <van-sidebar-item title="Title" info="99+" />
-</van-sidebar>
+<jy-sidebar v-model="activeKey">
+  <jy-sidebar-item title="Title" dot />
+  <jy-sidebar-item title="Title" info="5" />
+  <jy-sidebar-item title="Title" info="99+" />
+</jy-sidebar>
 ```
 
 ### Disabled
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" disabled />
-  <van-sidebar-item title="Title" />
-</van-sidebar>
+<jy-sidebar v-model="activeKey">
+  <jy-sidebar-item title="Title" />
+  <jy-sidebar-item title="Title" disabled />
+  <jy-sidebar-item title="Title" />
+</jy-sidebar>
 ```
 
 ## API

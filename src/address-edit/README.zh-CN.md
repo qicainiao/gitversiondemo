@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { AddressEdit } from 'vant';
+import { AddressEdit } from 'jyt';
 
 Vue.use(AddressEdit);
 ```
@@ -14,7 +14,7 @@ Vue.use(AddressEdit);
 ### 基础用法
 
 ```html
-<van-address-edit
+<jy-address-edit
   :area-list="areaList"
   show-postal
   show-delete

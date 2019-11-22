@@ -8,7 +8,7 @@ The Picker component is usually used with [Popup](#/en-US/popup) Component.
 
 ``` javascript
 import Vue from 'vue';
-import { Picker } from 'vant';
+import { Picker } from 'jyt';
 
 Vue.use(Picker);
 ```
@@ -18,7 +18,7 @@ Vue.use(Picker);
 ### Basic Usage
 
 ```html
-<van-picker :columns="columns" @change="onChange" />
+<jy-picker :columns="columns" @change="onChange" />
 ```
 
 ```javascript
@@ -39,7 +39,7 @@ export default {
 ### Default Index
 
 ```html
-<van-picker
+<jy-picker
   :columns="columns"
   :default-index="2"
   @change="onChange"
@@ -49,7 +49,7 @@ export default {
 ### Show Toolbar
 
 ```html
-<van-picker
+<jy-picker
   show-toolbar
   title="Title"
   :columns="columns"
@@ -79,7 +79,7 @@ export default {
 ### With Popup
 
 ```html
-<van-field
+<jy-field
   readonly
   clickable
   label="City"
@@ -88,14 +88,14 @@ export default {
   @click="showPicker = true"
 />
 
-<van-popup v-model="showPicker" position="bottom">
-  <van-picker
+<jy-popup v-model="showPicker" position="bottom">
+  <jy-picker
     show-toolbar
     :columns="columns"
     @cancel="showPicker = false"
     @confirm="onConfirm"
   />
-</van-popup>
+</jy-popup>
 ```
 
 ```js
@@ -119,7 +119,7 @@ export default {
 ### Disable option
 
 ```html
-<van-picker :columns="columns" />
+<jy-picker :columns="columns" />
 ```
 
 ```javascript
@@ -139,7 +139,7 @@ export default {
 ### Multi columns
 
 ```html
-<van-picker :columns="columns" @change="onChange" />
+<jy-picker :columns="columns" @change="onChange" />
 ```
 
 ```javascript
@@ -177,7 +177,7 @@ export default {
 When Picker columns data is acquired asynchronously, use `loading` prop to show loading prompt
 
 ```html
-<van-picker :columns="columns" loading />
+<jy-picker :columns="columns" loading />
 ```
 
 ## API

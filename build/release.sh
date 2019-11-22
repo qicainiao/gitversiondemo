@@ -16,13 +16,9 @@ then
   git commit -am "build: release $VERSION"
 
   #publish
-  git push origin dev
+  git push origin master
   git push origin refs/tags/v$VERSION
 
-  if [[ $VERSION =~ [beta] ]]
-  then
-    npm publish --tag beta
-  else 
-    npm publish
-  fi
+  npm publish
+  
 fi

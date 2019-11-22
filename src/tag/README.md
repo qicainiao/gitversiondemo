@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tag } from 'vant';
+import { Tag } from 'jyt';
 
 Vue.use(Tag);
 ```
@@ -14,65 +14,65 @@ Vue.use(Tag);
 ### Basic Usage
 
 ```html
-<van-tag>Tag</van-tag>
-<van-tag type="primary">Tag</van-tag>
-<van-tag type="success">Tag</van-tag>
-<van-tag type="danger">Tag</van-tag>
-<van-tag type="warning">Tag</van-tag>
+<jy-tag>Tag</jy-tag>
+<jy-tag type="primary">Tag</jy-tag>
+<jy-tag type="success">Tag</jy-tag>
+<jy-tag type="danger">Tag</jy-tag>
+<jy-tag type="warning">Tag</jy-tag>
 ```
 
 ### Round style
 
 ```html
-<van-tag round>Tag</van-tag>
-<van-tag round type="primary">Tag</van-tag>
-<van-tag round type="success">Tag</van-tag>
-<van-tag round type="danger">Tag</van-tag>
-<van-tag round type="warning">Tag</van-tag>
+<jy-tag round>Tag</jy-tag>
+<jy-tag round type="primary">Tag</jy-tag>
+<jy-tag round type="success">Tag</jy-tag>
+<jy-tag round type="danger">Tag</jy-tag>
+<jy-tag round type="warning">Tag</jy-tag>
 ```
 
 ### Mark style
 
 ```html
-<van-tag mark>Tag</van-tag>
-<van-tag mark type="primary">Tag</van-tag>
-<van-tag mark type="success">Tag</van-tag>
-<van-tag mark type="danger">Tag</van-tag>
-<van-tag mark type="warning">Tag</van-tag>
+<jy-tag mark>Tag</jy-tag>
+<jy-tag mark type="primary">Tag</jy-tag>
+<jy-tag mark type="success">Tag</jy-tag>
+<jy-tag mark type="danger">Tag</jy-tag>
+<jy-tag mark type="warning">Tag</jy-tag>
 ```
 
 ### Plain style
 
 ```html
-<van-tag plain>Tag</van-tag>
-<van-tag plain type="primary">Tag</van-tag>
-<van-tag plain type="success">Tag</van-tag>
-<van-tag plain type="danger">Tag</van-tag>
-<van-tag plain type="warning">Tag</van-tag>
+<jy-tag plain>Tag</jy-tag>
+<jy-tag plain type="primary">Tag</jy-tag>
+<jy-tag plain type="success">Tag</jy-tag>
+<jy-tag plain type="danger">Tag</jy-tag>
+<jy-tag plain type="warning">Tag</jy-tag>
 ```
 
 ### Custom Color
 
 ```html
-<van-tag color="#f2826a">Tag</van-tag>
-<van-tag color="#f2826a" plain>Tag</van-tag>
-<van-tag color="#7232dd">Tag</van-tag>
-<van-tag color="#7232dd" plain>Tag</van-tag>
-<van-tag color="#ffe1e1" text-color="#ad0000">Tag</van-tag>
+<jy-tag color="#f2826a">Tag</jy-tag>
+<jy-tag color="#f2826a" plain>Tag</jy-tag>
+<jy-tag color="#7232dd">Tag</jy-tag>
+<jy-tag color="#7232dd" plain>Tag</jy-tag>
+<jy-tag color="#ffe1e1" text-color="#ad0000">Tag</jy-tag>
 ```
 
 ### Custom Size
 
 ```html
-<van-tag type="danger">Tag</van-tag>
-<van-tag type="danger" size="medium">Tag</van-tag>
-<van-tag type="danger" size="large">Tag</van-tag>
+<jy-tag type="danger">Tag</jy-tag>
+<jy-tag type="danger" size="medium">Tag</jy-tag>
+<jy-tag type="danger" size="large">Tag</jy-tag>
 ```
 
 ### Closeable
 
 ```html
-<van-tag
+<jy-tag
   v-if="show.primary"
   closeable
   size="medium"
@@ -80,8 +80,8 @@ Vue.use(Tag);
   @close="close('primary')"
 >
   Tag
-</van-tag>
-<van-tag
+</jy-tag>
+<jy-tag
   v-if="show.success"
   closeable
   size="medium"
@@ -89,7 +89,7 @@ Vue.use(Tag);
   @close="close('success')"
 >
   Tag
-</van-tag>
+</jy-tag>
 ```
 
 ```js

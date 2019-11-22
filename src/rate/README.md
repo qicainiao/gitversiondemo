@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Rate } from 'vant';
+import { Rate } from 'jyt';
 
 Vue.use(Rate);
 ```
@@ -14,7 +14,7 @@ Vue.use(Rate);
 ### Basic Usage
 
 ```html
-<van-rate v-model="value" />
+<jy-rate v-model="value" />
 ```
 
 ```javascript
@@ -30,7 +30,7 @@ export default {
 ### Custom Icon
 
 ```html
-<van-rate
+<jy-rate
   v-model="value"
   icon="like"
   void-icon="like-o"
@@ -40,7 +40,7 @@ export default {
 ### Custom Style
 
 ```html
-<van-rate
+<jy-rate
   v-model="value"
   :size="25"
   color="#ee0a24"
@@ -52,7 +52,7 @@ export default {
 ### Half Star
 
 ```html
-<van-rate
+<jy-rate
   v-model="value"
   allow-half
   void-icon="star"
@@ -73,19 +73,19 @@ export default {
 ### Custom Count
 
 ```html
-<van-rate v-model="value" :count="6" />
+<jy-rate v-model="value" :count="6" />
 ```
 
 ### Disabled
 
 ```html
- <van-rate v-model="value" disabled />
+ <jy-rate v-model="value" disabled />
 ```
 
 ### Readonly
 
 ```html
-<van-rate v-model="value" readonly />
+<jy-rate v-model="value" readonly />
 ```
 
 ## API

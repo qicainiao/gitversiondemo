@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Card } from 'vant';
+import { Card } from 'jyt';
 
 Vue.use(Card);
 ```
@@ -14,26 +14,26 @@ Vue.use(Card);
 ### Basic Usage
 
 ```html
-<van-card
+<jy-card
   num="2"
   price="2.00"
   title="Title"
   desc="Description"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/jyt/t-thirt.jpg"
 />
 ```
 
 ### Discount Info
 
 ```html
-<van-card
+<jy-card
   num="2"
   tag="Tag"
   price="2.00"
   title="Title"
   desc="Description"
   origin-price="10.00"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/jyt/t-thirt.jpg"
 />
 ```
 
@@ -42,22 +42,22 @@ Vue.use(Card);
 Use slot to custom content.
 
 ```html
-<van-card
+<jy-card
   num="2"
   title="Title"
   desc="Description"  
   price="2.00"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/jyt/t-thirt.jpg"
 >
   <div slot="tags">
-    <van-tag plain type="danger">Tag</van-tag>
-    <van-tag plain type="danger">Tag</van-tag>
+    <jy-tag plain type="danger">Tag</jy-tag>
+    <jy-tag plain type="danger">Tag</jy-tag>
   </div>
   <div slot="footer">
-    <van-button size="mini">Button</van-button>
-    <van-button size="mini">Button</van-button>
+    <jy-button size="mini">Button</jy-button>
+    <jy-button size="mini">Button</jy-button>
   </div>
-</van-card>
+</jy-card>
 ```
 
 ## API

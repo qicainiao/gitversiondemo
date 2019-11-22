@@ -1,8 +1,8 @@
 <div class="card">
   <div class="van-doc-intro">
     <img class="van-doc-intro__logo" style="width: 120px; height: 120px; box-shadow: none;" src="https://img.yzcdn.cn/vant/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Vant</h2>
-    <p>轻量、可靠的移动端 Vue 组件库</p>
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">JYH5</h2>
+    <p>轻量、可靠的移动端 JYH5 组件库</p>
   </div>
 </div>
 

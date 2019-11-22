@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Icon } from 'vant';
+import { Icon } from 'jyt';
 
 Vue.use(Icon);
 ```
@@ -20,8 +20,8 @@ Vue.use(Icon);
 `Icon`的`name`属性支持传入图标名称或图片链接，所有可用的图标名称见右侧示例
 
 ```html
-<van-icon name="close" />
-<van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+<jy-icon name="close" />
+<jy-icon name="https://b.yzcdn.cn/jyt/icon-demo-1126.png" />
 ```
 
 ### 提示信息
@@ -29,9 +29,9 @@ Vue.use(Icon);
 设置`dot`属性后，会在图标右上角展示一个小红点。设置`info`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<van-icon name="chat" dot />
-<van-icon name="chat" info="9" />
-<van-icon name="chat" info="99+" />
+<jy-icon name="chat" dot />
+<jy-icon name="chat" info="9" />
+<jy-icon name="chat" info="99+" />
 ```
 
 ### 使用本地字体文件
@@ -39,7 +39,7 @@ Vue.use(Icon);
 Icon 组件默认引用有赞 CDN 提供的字体文件，并通过网络下载。如果需要在项目中使用本地字体文件，请引入下面的 CSS 文件，并在项目中配置`url-loader`
 
 ```js
-import 'vant/lib/icon/local.css';
+import 'jyt/lib/icon/local.css';
 ```
 
 ### 自定义图标
@@ -64,7 +64,7 @@ import 'vant/lib/icon/local.css';
 
 ```html
 <!-- 通过 class-prefix 指定类名为 my-icon -->
-<van-icon class-prefix="my-icon" name="extra" />
+<jy-icon class-prefix="my-icon" name="extra" />
 ```
 
 ## API
@@ -78,7 +78,7 @@ import 'vant/lib/icon/local.css';
 | info | 图标右上角徽标的内容 | *string \| number* | - | - |
 | color | 图标颜色 | *string* | `inherit` | - |
 | size | 图标大小，如 `20px` `2em`，默认单位为`px` | *string \| number* | `inherit` | - |
-| class-prefix | 类名前缀 | *string* | `van-icon` | - |
+| class-prefix | 类名前缀 | *string* | `jy-icon` | - |
 | tag | HTML 标签 | *string* | `i` | - |
 
 ### Events

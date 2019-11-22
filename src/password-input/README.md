@@ -8,7 +8,7 @@ The PasswordInput component is usually used with [NumberKeyboard](#/en-US/number
 
 ``` javascript
 import Vue from 'vue';
-import { PasswordInput, NumberKeyboard } from 'vant';
+import { PasswordInput, NumberKeyboard } from 'jyt';
 
 Vue.use(PasswordInput).use(NumberKeyboard);
 ```
@@ -19,7 +19,7 @@ Vue.use(PasswordInput).use(NumberKeyboard);
 
 ```html
 <!-- PasswordInput -->
-<van-password-input
+<jy-password-input
   :value="value"
   info="Some tips"
   :focused="showKeyboard"
@@ -27,7 +27,7 @@ Vue.use(PasswordInput).use(NumberKeyboard);
 />
 
 <!-- NumberKeyboard -->
-<van-number-keyboard
+<jy-number-keyboard
   :show="showKeyboard"
   @input="onInput"
   @delete="onDelete"
@@ -58,7 +58,7 @@ export default {
 ### Custom length
 
 ```html
-<van-password-input
+<jy-password-input
   :value="value"
   :length="4"
   :gutter="15"
@@ -70,7 +70,7 @@ export default {
 ### Without mask
 
 ```html
-<van-password-input
+<jy-password-input
   :value="value"
   :mask="false"
   :focused="showKeyboard"

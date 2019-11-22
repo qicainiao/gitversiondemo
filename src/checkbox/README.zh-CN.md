@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Checkbox, CheckboxGroup } from 'vant';
+import { Checkbox, CheckboxGroup } from 'jyt';
 
 Vue.use(Checkbox).use(CheckboxGroup);
 ```
@@ -16,7 +16,7 @@ Vue.use(Checkbox).use(CheckboxGroup);
 通过`v-model`绑定复选框的勾选状态
 
 ```html
-<van-checkbox v-model="checked">复选框</van-checkbox>
+<jy-checkbox v-model="checked">复选框</jy-checkbox>
 ```
 
 ```javascript
@@ -34,7 +34,7 @@ export default {
 通过设置`disabled`属性可以禁用复选框
 
 ```html
-<van-checkbox v-model="checked" disabled>复选框</van-checkbox>
+<jy-checkbox v-model="checked" disabled>复选框</jy-checkbox>
 ```
 
 ### 自定义形状
@@ -42,7 +42,7 @@ export default {
 将`shape`属性设置为`square`，复选框的形状会变成方形
 
 ```html
-<van-checkbox v-model="checked" shape="square">复选框</van-checkbox>
+<jy-checkbox v-model="checked" shape="square">复选框</jy-checkbox>
 ```
 
 ### 自定义颜色
@@ -50,7 +50,7 @@ export default {
 通过`checked-color`属性可以自定义选中状态下的图标颜色
 
 ```html
-<van-checkbox v-model="checked" checked-color="#07c160">复选框</van-checkbox>
+<jy-checkbox v-model="checked" checked-color="#07c160">复选框</jy-checkbox>
 ```
 
 ### 自定义图标
@@ -58,22 +58,22 @@ export default {
 通过 icon 插槽自定义图标，可以通过`slotProps`判断是否为选中状态
 
 ```html
-<van-checkbox v-model="checked">
+<jy-checkbox v-model="checked">
   自定义图标
   <img
     slot="icon"
     slot-scope="props"
     :src="props.checked ? activeIcon : inactiveIcon"
   >
-</van-checkbox>
+</jy-checkbox>
 ```
 
 ```js
 export default {
   data() {
     checked: true,
-    activeIcon: 'https://img.yzcdn.cn/vant/user-active.png',
-    inactiveIcon: 'https://img.yzcdn.cn/vant/user-inactive.png'
+    activeIcon: 'https://img.yzcdn.cn/jyt/user-active.png',
+    inactiveIcon: 'https://img.yzcdn.cn/jyt/user-inactive.png'
   }
 }
 ```
@@ -83,11 +83,11 @@ export default {
 复选框可以与复选框组一起使用，选中值是一个数组，通过`v-model`绑定在`CheckboxGroup`上，数组中的值为选中的复选框的`name`
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-checkbox name="a">复选框 a</van-checkbox>
-  <van-checkbox name="b">复选框 b</van-checkbox>
-  <van-checkbox name="c">复选框 c</van-checkbox>
-</van-checkbox-group>
+<jy-checkbox-group v-model="result">
+  <jy-checkbox name="a">复选框 a</jy-checkbox>
+  <jy-checkbox name="b">复选框 b</jy-checkbox>
+  <jy-checkbox name="c">复选框 c</jy-checkbox>
+</jy-checkbox-group>
 ```
 
 ```javascript
@@ -105,11 +105,11 @@ export default {
 通过`max`属性可以限制最大可选数
 
 ```html
-<van-checkbox-group v-model="result" :max="2">
-  <van-checkbox name="a">复选框 a</van-checkbox>
-  <van-checkbox name="b">复选框 b</van-checkbox>
-  <van-checkbox name="c">复选框 c</van-checkbox>
-</van-checkbox-group>
+<jy-checkbox-group v-model="result" :max="2">
+  <jy-checkbox name="a">复选框 a</jy-checkbox>
+  <jy-checkbox name="b">复选框 b</jy-checkbox>
+  <jy-checkbox name="c">复选框 c</jy-checkbox>
+</jy-checkbox-group>
 ```
 
 ### 全选与反选
@@ -117,14 +117,14 @@ export default {
 通过`CheckboxGroup`实例上的`toggleAll`方法可以实现全选与反选
 
 ```html
-<van-checkbox-group v-model="result" ref="checkboxGroup">
-  <van-checkbox name="a">复选框 a</van-checkbox>
-  <van-checkbox name="b">复选框 b</van-checkbox>
-  <van-checkbox name="c">复选框 c</van-checkbox>
-</van-checkbox-group>
+<jy-checkbox-group v-model="result" ref="checkboxGroup">
+  <jy-checkbox name="a">复选框 a</jy-checkbox>
+  <jy-checkbox name="b">复选框 b</jy-checkbox>
+  <jy-checkbox name="c">复选框 c</jy-checkbox>
+</jy-checkbox-group>
 
-<van-button type="primary" @click="checkAll">全选</van-button>
-<van-button type="info" @click="toggleAll">反选</van-button>
+<jy-button type="primary" @click="checkAll">全选</jy-button>
+<jy-button type="info" @click="toggleAll">反选</jy-button>
 ```
 
 ```js
@@ -151,23 +151,23 @@ export default {
 此时你需要再引入`Cell`和`CellGroup`组件，并通过`Checkbox`实例上的 toggle 方法触发切换
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-cell-group>
-    <van-cell
+<jy-checkbox-group v-model="result">
+  <jy-cell-group>
+    <jy-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
       :title="`复选框 ${item}`"
       @click="toggle(index)"
     >
-      <van-checkbox
+      <jy-checkbox
         :name="item"
         ref="checkboxes"
         slot="right-icon"
       />
-    </van-cell>
-  </van-cell-group>
-</van-checkbox-group>
+    </jy-cell>
+  </jy-cell-group>
+</jy-checkbox-group>
 ```
 
 ```js

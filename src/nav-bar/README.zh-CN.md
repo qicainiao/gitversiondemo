@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { NavBar } from 'vant';
+import { NavBar } from 'jyt';
 
 Vue.use(NavBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(NavBar);
 ### 基础用法
 
 ```html
-<van-nav-bar
+<jy-nav-bar
   title="标题"
   left-text="返回"
   right-text="按钮"
@@ -42,9 +42,9 @@ export default {
 通过插槽定制内容
 
 ```html
-<van-nav-bar title="标题" left-text="返回" left-arrow>
-  <van-icon name="search" slot="right" />
-</van-nav-bar>
+<jy-nav-bar title="标题" left-text="返回" left-arrow>
+  <jy-icon name="search" slot="right" />
+</jy-nav-bar>
 ```
 
 ## API

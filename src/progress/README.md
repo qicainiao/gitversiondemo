@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Progress } from 'vant';
+import { Progress } from 'jyt';
 
 Vue.use(Progress);
 ```
@@ -16,19 +16,19 @@ Vue.use(Progress);
 Use 'percentage' prop to set current progress
 
 ```html
-<van-progress :percentage="50" />
+<jy-progress :percentage="50" />
 ```
 
 ### Stroke Width
 
 ```html
-<van-progress :percentage="50" stroke-width="8" />
+<jy-progress :percentage="50" stroke-width="8" />
 ```
 
 ### Inactive
 
 ```html
-<van-progress inactive :percentage="50" />
+<jy-progress inactive :percentage="50" />
 ```
 
 
@@ -37,19 +37,19 @@ Use 'percentage' prop to set current progress
 Use `pivot-text` to custom text，use `color` to custom bar color
 
 ```html
-<van-progress
+<jy-progress
   pivot-text="Orange"
   color="#f2826a"
   :percentage="25"
 />
 
-<van-progress
+<jy-progress
   pivot-text="Red"
   color="#ee0a24"
   :percentage="50"
 />
 
-<van-progress
+<jy-progress
   :percentage="75"
   pivot-text="Purple"
   pivot-color="#7232dd"

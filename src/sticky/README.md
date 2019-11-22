@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Sticky } from 'vant';
+import { Sticky } from 'jyt';
 
 Vue.use(Sticky);
 ```
@@ -14,26 +14,26 @@ Vue.use(Sticky);
 ### Basic Usage
 
 ```html
-<van-sticky>
-  <van-button type="primary">Basic Usage</van-button>
-</van-sticky>
+<jy-sticky>
+  <jy-button type="primary">Basic Usage</jy-button>
+</jy-sticky>
 ```
 
 ### Offset Top
 
 ```html
-<van-sticky :offset-top="50">
-  <van-button type="info">Offset Top</van-button>
-</van-sticky>
+<jy-sticky :offset-top="50">
+  <jy-button type="info">Offset Top</jy-button>
+</jy-sticky>
 ```
 
 ### Set Container
 
 ```html
 <div ref="container" style="height: 150px;">
-  <van-sticky :container="container">
-    <van-button type="warning">Set Container</van-button>
-  </van-sticky>
+  <jy-sticky :container="container">
+    <jy-button type="warning">Set Container</jy-button>
+  </jy-sticky>
 </div>
 ```
 

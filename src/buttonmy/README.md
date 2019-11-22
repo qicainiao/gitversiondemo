@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Button } from 'vant';
+import { Button } from 'jyt';
 
 Vue.use(Button);
 ```
@@ -14,79 +14,79 @@ Vue.use(Button);
 ### Type
 
 ```html
-<van-button type="default">Default</van-button>
-<van-button type="primary">Primary</van-button>
-<van-button type="info">Info</van-button>
-<van-button type="danger">Danger</van-button>
-<van-button type="warning">Warning</van-button>
+<jy-button type="default">Default</jy-button>
+<jy-button type="primary">Primary</jy-button>
+<jy-button type="info">Info</jy-button>
+<jy-button type="danger">Danger</jy-button>
+<jy-button type="warning">Warning</jy-button>
 ```
 
 ### Plain
 
 ```html
-<van-button plain type="primary">Primary</van-button>
-<van-button plain type="info">Danger</van-button>
+<jy-button plain type="primary">Primary</jy-button>
+<jy-button plain type="info">Danger</jy-button>
 ```
 
 ### Hairline
 
 ```html
-<van-button plain hairline type="primary">Hairline</van-button>
-<van-button plain hairline type="info">Hairline</van-button>
+<jy-button plain hairline type="primary">Hairline</jy-button>
+<jy-button plain hairline type="info">Hairline</jy-button>
 ```
 
 ### Disabled
 
 ```html
-<van-button disabled type="primary">Diabled</van-button>
-<van-button disabled type="info">Diabled</van-button>
+<jy-button disabled type="primary">Diabled</jy-button>
+<jy-button disabled type="info">Diabled</jy-button>
 ```
 
 ### Loading
 
 ```html 
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="info" loading-text="Loading..." />
+<jy-button loading type="primary" />
+<jy-button loading type="primary" loading-type="spinner" />
+<jy-button loading type="info" loading-text="Loading..." />
 ```
 
 ### Shape
 
 ```html 
-<van-button square type="primary">Square</van-button>
-<van-button round type="info">Round</van-button>
+<jy-button square type="primary">Square</jy-button>
+<jy-button round type="info">Round</jy-button>
 ```
 
 ### Icon
 
 ```html 
-<van-button icon="star-o" type="primary" />
-<van-button icon="star-o" type="primary">Button</van-button>
-<van-button icon="https://img.yzcdn.cn/vant/logo.png" type="info">Button</van-button>
+<jy-button icon="star-o" type="primary" />
+<jy-button icon="star-o" type="primary">Button</jy-button>
+<jy-button icon="https://img.yzcdn.cn/jyt/logo.png" type="info">Button</jy-button>
 ```
 
 ### Size
 
 ```html 
-<van-button type="primary" size="large">Large</van-button>
-<van-button type="primary" size="normal">Normal</van-button>
-<van-button type="primary" size="small">Small</van-button>
-<van-button type="primary" size="mini">Mini</van-button>
+<jy-button type="primary" size="large">Large</jy-button>
+<jy-button type="primary" size="normal">Normal</jy-button>
+<jy-button type="primary" size="small">Small</jy-button>
+<jy-button type="primary" size="mini">Mini</jy-button>
 ```
 
 ### Route
 
 ```html
-<van-button type="primary" url="/vant/mobile.html">URL</van-button>
-<van-button type="primary" to="index">Vue Router</van-button>
+<jy-button type="primary" url="/jyt/mobile.html">URL</jy-button>
+<jy-button type="primary" to="index">Vue Router</jy-button>
 ```
 
 ### Custom Color
 
 ```html
-<van-button color="#7232dd">Pure</van-button>
-<van-button color="#7232dd" plain>Pure</van-button>
-<van-button color="linear-gradient(to right, #4bb0ff, #6149f6)">Gradient</van-button>
+<jy-button color="#7232dd">Pure</jy-button>
+<jy-button color="#7232dd" plain>Pure</jy-button>
+<jy-button color="linear-gradient(to right, #4bb0ff, #6149f6)">Gradient</jy-button>
 ```
 
 ## API

@@ -8,7 +8,7 @@ Used to select time, support date and time dimensions, usually used with the [Po
 
 ``` javascript
 import Vue from 'vue';
-import { DatetimePicker } from 'vant';
+import { DatetimePicker } from 'jyt';
 
 Vue.use(DatetimePicker);
 ```
@@ -18,7 +18,7 @@ Vue.use(DatetimePicker);
 ### Choose DateTime
 
 ```html
-<van-datetime-picker
+<jy-datetime-picker
   v-model="currentDate"
   type="datetime"
   :min-date="minDate"
@@ -43,7 +43,7 @@ export default {
 ### Choose Date
 
 ```html
-<van-datetime-picker
+<jy-datetime-picker
   v-model="currentDate"
   type="date"
   :min-date="minDate"
@@ -63,7 +63,7 @@ export default {
 ### Choose Year-Month
 
 ```html
-<van-datetime-picker
+<jy-datetime-picker
   v-model="currentDate"
   type="year-month"
   :min-date="minDate"
@@ -95,7 +95,7 @@ export default {
 ### Choose Time
 
 ```html
-<van-datetime-picker
+<jy-datetime-picker
   v-model="currentTime"
   type="time"
   :min-hour="10"
@@ -116,7 +116,7 @@ export default {
 ### Option Filter
 
 ```html
-<van-datetime-picker
+<jy-datetime-picker
   v-model="currentTime"
   type="time"
   :filter="filter"

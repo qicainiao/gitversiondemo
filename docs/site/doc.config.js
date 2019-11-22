@@ -16,7 +16,7 @@ export default {
     header: {
       logo: {
         image: 'https://b.yzcdn.cn/vant/logo-white.png',
-        title: 'Vant',
+        title: 'JYH5',
         href: '#/'
       },
       nav: {
@@ -383,7 +383,7 @@ export default {
     header: {
       logo: {
         image: 'https://b.yzcdn.cn/vant/logo-white.png',
-        title: 'Vant',
+        title: 'JYH5',
         href: '#/'
       },
       nav: {

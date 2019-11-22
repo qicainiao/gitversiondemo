@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Skeleton } from 'vant';
+import { Skeleton } from 'jyt';
 
 Vue.use(Skeleton);
 ```
@@ -14,26 +14,26 @@ Vue.use(Skeleton);
 ### Basic Usage
 
 ```html
-<van-skeleton title :row="3" />
+<jy-skeleton title :row="3" />
 ```
 
 ### Show Avatar
 
 ```html
-<van-skeleton title avatar :row="3" />
+<jy-skeleton title avatar :row="3" />
 ```
 
 ### Show Children
 
 ```html
-<van-skeleton
+<jy-skeleton
   title
   avatar
   :row="3"
   :loading="loading"
 >
   <div>Content</div>
-</van-skeleton>
+</jy-skeleton>
 ```
 
 ```js

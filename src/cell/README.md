@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Cell, CellGroup } from 'vant';
+import { Cell, CellGroup } from 'jyt';
 
 Vue.use(Cell).use(CellGroup);
 ```
@@ -14,84 +14,84 @@ Vue.use(Cell).use(CellGroup);
 ### Basic Usage
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" value="Content" />
-  <van-cell title="Cell title" value="Content" label="Description" />
-</van-cell-group>
+<jy-cell-group>
+  <jy-cell title="Cell title" value="Content" />
+  <jy-cell title="Cell title" value="Content" label="Description" />
+</jy-cell-group>
 ```
 
 ### Size
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" value="Content" size="large" />
-  <van-cell title="Cell title" value="Content" size="large" label="Description" />
-</van-cell-group>
+<jy-cell-group>
+  <jy-cell title="Cell title" value="Content" size="large" />
+  <jy-cell title="Cell title" value="Content" size="large" label="Description" />
+</jy-cell-group>
 ```
 
 ### Left Icon
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" icon="location-o" />
-</van-cell-group>
+<jy-cell-group>
+  <jy-cell title="Cell title" icon="location-o" />
+</jy-cell-group>
 ```
 
 ### Value only
 
 ```html
-<van-cell-group>
-  <van-cell value="Content" />
-</van-cell-group>
+<jy-cell-group>
+  <jy-cell value="Content" />
+</jy-cell-group>
 ```
 
 ### Link
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" is-link />
-  <van-cell title="Cell title" is-link value="Content" />
-  <van-cell title="Cell title" is-link arrow-direction="down" value="Content" />
-</van-cell-group>
+<jy-cell-group>
+  <jy-cell title="Cell title" is-link />
+  <jy-cell title="Cell title" is-link value="Content" />
+  <jy-cell title="Cell title" is-link arrow-direction="down" value="Content" />
+</jy-cell-group>
 ```
 
 ### Router
 
 ```html
-<van-cell-group>
-  <van-cell title="URL" is-link url="/vant/mobile.html" />
-  <van-cell title="Vue Router" is-link to="index" />
-</van-cell-group>
+<jy-cell-group>
+  <jy-cell title="URL" is-link url="/jyt/mobile.html" />
+  <jy-cell title="Vue Router" is-link to="index" />
+</jy-cell-group>
 ```
 
 ### Group Title
 
 ```html
-<van-cell-group title="Group 1">
-  <van-cell title="Cell title" value="Content" />
-</van-cell-group>
-<van-cell-group title="Group 2">
-  <van-cell title="Cell title" value="Content" />
-</van-cell-group>
+<jy-cell-group title="Group 1">
+  <jy-cell title="Cell title" value="Content" />
+</jy-cell-group>
+<jy-cell-group title="Group 2">
+  <jy-cell title="Cell title" value="Content" />
+</jy-cell-group>
 ```
 
 ### Use Slots
 
 ```html
-<van-cell value="Content" is-link>
+<jy-cell value="Content" is-link>
   <template slot="title">
     <span class="custom-title">Cell title</span>
-    <van-tag type="danger">Tag</van-tag>
+    <jy-tag type="danger">Tag</jy-tag>
   </template>
-</van-cell>
+</jy-cell>
 
-<van-cell title="Cell title" icon="shop-o">
-  <van-icon
+<jy-cell title="Cell title" icon="shop-o">
+  <jy-icon
     slot="right-icon"
     name="search"
     style="line-height: inherit;"
   />
-</van-cell>
+</jy-cell>
 ```
 
 ## API

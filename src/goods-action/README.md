@@ -8,7 +8,7 @@ import {
   GoodsAction,
   GoodsActionButton,
   GoodsActionIcon
-} from 'vant';
+} from 'jyt';
 
 Vue
   .use(GoodsAction)
@@ -21,12 +21,12 @@ Vue
 ### Basic Usage
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
-  <van-goods-action-button type="warning" text="Button1" @click="onClickButton" />
-  <van-goods-action-button type="danger" text="Button2" @click="onClickButton" />
-</van-goods-action>
+<jy-goods-action>
+  <jy-goods-action-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
+  <jy-goods-action-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
+  <jy-goods-action-button type="warning" text="Button1" @click="onClickButton" />
+  <jy-goods-action-button type="danger" text="Button2" @click="onClickButton" />
+</jy-goods-action>
 ```
 
 ```javascript
@@ -47,24 +47,24 @@ export default {
 Use `info` prop to show badge in icon
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" info="5" />
-  <van-goods-action-icon icon="shop-o" text="Icon3" info="12" />
-  <van-goods-action-button type="warning" text="Button1" />
-  <van-goods-action-button type="danger" text="Button2" />
-</van-goods-action>
+<jy-goods-action>
+  <jy-goods-action-icon icon="chat-o" text="Icon1" />
+  <jy-goods-action-icon icon="cart-o" text="Icon2" info="5" />
+  <jy-goods-action-icon icon="shop-o" text="Icon3" info="12" />
+  <jy-goods-action-button type="warning" text="Button1" />
+  <jy-goods-action-button type="danger" text="Button2" />
+</jy-goods-action>
 ```
 
 ### Custom Button Color
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" />
-  <van-goods-action-icon icon="shop-o" text="Icon2" />
-  <van-goods-action-button color="#be99ff" type="warning" text="Button1" />
-  <van-goods-action-button color="#7232dd" type="danger" text="Button2" />
-</van-goods-action>
+<jy-goods-action>
+  <jy-goods-action-icon icon="chat-o" text="Icon1" />
+  <jy-goods-action-icon icon="shop-o" text="Icon2" />
+  <jy-goods-action-button color="#be99ff" type="warning" text="Button1" />
+  <jy-goods-action-button color="#7232dd" type="danger" text="Button2" />
+</jy-goods-action>
 ```
 
 ## API

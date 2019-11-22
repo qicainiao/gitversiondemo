@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { NumberKeyboard } from 'vant';
+import { NumberKeyboard } from 'jyt';
 
 Vue.use(NumberKeyboard);
 ```
@@ -18,11 +18,11 @@ Vue.use(NumberKeyboard);
 ### 默认样式
 
 ```html
-<van-button @touchstart.stop="show = true">
+<jy-button @touchstart.stop="show = true">
   弹出默认键盘
-</van-button>
+</jy-button>
 
-<van-number-keyboard
+<jy-number-keyboard
   :show="show"
   extra-key="."
   close-button-text="完成"
@@ -54,7 +54,7 @@ export default {
 ### 自定义样式
 
 ```html
-<van-number-keyboard
+<jy-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -70,14 +70,14 @@ export default {
 可以通过`v-model`绑定键盘当前输入值
 
 ```html
-<van-field
+<jy-field
   readonly
   clickable
   :value="value"
   @touchstart.native.stop="show = true"
 />
 
-<van-number-keyboard
+<jy-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"

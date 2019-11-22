@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Stepper } from 'vant';
+import { Stepper } from 'jyt';
 
 Vue.use(Stepper);
 ```
@@ -14,7 +14,7 @@ Vue.use(Stepper);
 ### Basic Usage
 
 ```html
-<van-stepper v-model="value" />
+<jy-stepper v-model="value" />
 ```
 
 ```javascript
@@ -30,43 +30,43 @@ export default {
 ### Step
 
 ```html
-<van-stepper v-model="value" step="2" />
+<jy-stepper v-model="value" step="2" />
 ```
 
 ### Range
 
 ```html
-<van-stepper v-model="value" min="5" max="8" />
+<jy-stepper v-model="value" min="5" max="8" />
 ```
 
 ### Integer
 
 ```html
-<van-stepper v-model="value" integer />
+<jy-stepper v-model="value" integer />
 ```
 
 ### Disabled
 
 ```html
-<van-stepper v-model="value" disabled />
+<jy-stepper v-model="value" disabled />
 ```
 
 ### Decimal Length
 
 ```html
-<van-stepper v-model="value" step="0.2" :decimal-length="1" />
+<jy-stepper v-model="value" step="0.2" :decimal-length="1" />
 ```
 
 ### Custom Size
 
 ```html
-<van-stepper v-model="value" input-width="40px" button-size="32px" />
+<jy-stepper v-model="value" input-width="40px" button-size="32px" />
 ```
 
 ### Async Change
 
 ```html
-<van-stepper
+<jy-stepper
   :value="value"
   async-change
   @change="onChange"

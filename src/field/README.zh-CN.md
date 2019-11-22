@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Field } from 'vant';
+import { Field } from 'jyt';
 
 Vue.use(Field);
 ```
@@ -20,9 +20,9 @@ Vue.use(Field);
 通过`v-model`绑定输入框的值
 
 ```html
-<van-cell-group>
-  <van-field v-model="value" placeholder="请输入用户名" />
-</van-cell-group>
+<jy-cell-group>
+  <jy-field v-model="value" placeholder="请输入用户名" />
+</jy-cell-group>
 ```
 
 ### 自定义类型
@@ -30,8 +30,8 @@ Vue.use(Field);
 根据`type`属性定义不同类型的输入框
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="username"
     required
     clearable
@@ -41,27 +41,27 @@ Vue.use(Field);
     @click-right-icon="$toast('question')"
   />
 
-  <van-field
+  <jy-field
     v-model="password"
     type="password"
     label="密码"
     placeholder="请输入密码"
     required
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ### 禁用输入框
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     value="输入框已禁用"
     label="用户名"
     left-icon="contact"
     disabled
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ### 错误提示
@@ -69,20 +69,20 @@ Vue.use(Field);
 通过`error`或者`error-message`属性增加对应的错误提示
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="username"
     label="用户名"
     placeholder="请输入用户名"
     error
   />
-  <van-field
+  <jy-field
     v-model="phone"
     label="手机号"
     placeholder="请输入手机号"
     error-message="手机号格式错误"
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ### 插入按钮
@@ -90,17 +90,17 @@ Vue.use(Field);
 通过 button 插槽可以在输入框尾部插入按钮
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="sms"
     center
     clearable
     label="短信验证码"
     placeholder="请输入短信验证码"
   >
-    <van-button slot="button" size="small" type="primary">发送验证码</van-button>
-  </van-field>
-</van-cell-group>
+    <jy-button slot="button" size="small" type="primary">发送验证码</jy-button>
+  </jy-field>
+</jy-cell-group>
 ```
 
 ### 高度自适应
@@ -108,8 +108,8 @@ Vue.use(Field);
 对于 textarea，可以通过`autosize`属性设置高度自适应
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="message"
     rows="1"
     autosize
@@ -117,7 +117,7 @@ Vue.use(Field);
     type="textarea"
     placeholder="请输入留言"
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ### 显示字数统计
@@ -125,8 +125,8 @@ Vue.use(Field);
 设置`maxlength`和`show-word-limit`属性后会在底部显示字数统计
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="message"
     rows="2"
     autosize
@@ -136,7 +136,7 @@ Vue.use(Field);
     placeholder="请输入留言"
     show-word-limit
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ## API

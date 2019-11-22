@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { RadioGroup, Radio } from 'vant';
+import { RadioGroup, Radio } from 'jyt';
 
 Vue.use(RadioGroup);
 Vue.use(Radio);
@@ -17,10 +17,10 @@ Vue.use(Radio);
 通过`v-model`绑定值当前选中项的 name
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">单选框 1</van-radio>
-  <van-radio name="2">单选框 2</van-radio>
-</van-radio-group>
+<jy-radio-group v-model="radio">
+  <jy-radio name="1">单选框 1</jy-radio>
+  <jy-radio name="2">单选框 2</jy-radio>
+</jy-radio-group>
 ```
 
 ```javascript
@@ -38,10 +38,10 @@ export default {
 通过`disabled`属性禁止选项切换，在`Radio`上设置`disabled`可以禁用单个选项
 
 ```html
-<van-radio-group v-model="radio" disabled>
-  <van-radio name="1">单选框 1</van-radio>
-  <van-radio name="2">单选框 2</van-radio>
-</van-radio-group>
+<jy-radio-group v-model="radio" disabled>
+  <jy-radio name="1">单选框 1</jy-radio>
+  <jy-radio name="2">单选框 2</jy-radio>
+</jy-radio-group>
 ```
 
 ### 自定义颜色
@@ -49,10 +49,10 @@ export default {
 通过`checked-color`属性设置选中状态的图标颜色
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" checked-color="#07c160">单选框 1</van-radio>
-  <van-radio name="2" checked-color="#07c160">单选框 2</van-radio>
-</van-radio-group>
+<jy-radio-group v-model="radio">
+  <jy-radio name="1" checked-color="#07c160">单选框 1</jy-radio>
+  <jy-radio name="2" checked-color="#07c160">单选框 2</jy-radio>
+</jy-radio-group>
 ```
 
 ### 自定义图标
@@ -60,32 +60,32 @@ export default {
 通过`icon`插槽自定义图标，并通过`slotProps`判断是否为选中状态
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">
+<jy-radio-group v-model="radio">
+  <jy-radio name="1">
     单选框 1
     <img
       slot="icon"
       slot-scope="props"
       :src="props.checked ? activeIcon : inactiveIcon"
     >
-  </van-radio>
-  <van-radio name="2">
+  </jy-radio>
+  <jy-radio name="2">
     单选框 2
     <img
       slot="icon"
       slot-scope="props"
       :src="props.checked ? activeIcon : inactiveIcon"
     >
-  </van-radio>
-</van-radio-group>
+  </jy-radio>
+</jy-radio-group>
 ```
 
 ```js
 export default {
   data() {
     radio: '1',
-    activeIcon: 'https://img.yzcdn.cn/vant/user-active.png',
-    inactiveIcon: 'https://img.yzcdn.cn/vant/user-inactive.png'
+    activeIcon: 'https://img.yzcdn.cn/jyt/user-active.png',
+    inactiveIcon: 'https://img.yzcdn.cn/jyt/user-inactive.png'
   }
 }
 ```
@@ -95,16 +95,16 @@ export default {
 此时你需要再引入`Cell`和`CellGroup`组件
 
 ```html
-<van-radio-group v-model="radio">
-  <van-cell-group>
-    <van-cell title="单选框 1" clickable @click="radio = '1'">
-      <van-radio slot="right-icon" name="1" />
-    </van-cell>
-    <van-cell title="单选框 2" clickable @click="radio = '2'">
-      <van-radio slot="right-icon" name="2" />
-    </van-cell>
-  </van-cell-group>
-</van-radio-group>
+<jy-radio-group v-model="radio">
+  <jy-cell-group>
+    <jy-cell title="单选框 1" clickable @click="radio = '1'">
+      <jy-radio slot="right-icon" name="1" />
+    </jy-cell>
+    <jy-cell title="单选框 2" clickable @click="radio = '2'">
+      <jy-radio slot="right-icon" name="2" />
+    </jy-cell>
+  </jy-cell-group>
+</jy-radio-group>
 ```
 
 ## API

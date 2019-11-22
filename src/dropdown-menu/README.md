@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { DropdownMenu, DropdownItem } from 'vant';
+import { DropdownMenu, DropdownItem } from 'jyt';
 
 Vue.use(DropdownMenu).use(DropdownItem);
 ```
@@ -14,10 +14,10 @@ Vue.use(DropdownMenu).use(DropdownItem);
 ### Basic Usage
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<jy-dropdown-menu>
+  <jy-dropdown-item v-model="value1" :options="option1" />
+  <jy-dropdown-item v-model="value2" :options="option2" />
+</jy-dropdown-menu>
 ```
 
 ```js
@@ -44,14 +44,14 @@ export default {
 ### Custom Content
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value" :options="option" />
-  <van-dropdown-item title="Title" ref="item">
-    <van-switch-cell v-model="switch1" title="Title" />
-    <van-switch-cell v-model="switch2" title="Title" />
-    <van-button block type="info" @click="onConfirm">Confirm</van-button>
-  </van-dropdown-item>
-</van-dropdown-menu>
+<jy-dropdown-menu>
+  <jy-dropdown-item v-model="value" :options="option" />
+  <jy-dropdown-item title="Title" ref="item">
+    <jy-switch-cell v-model="switch1" title="Title" />
+    <jy-switch-cell v-model="switch2" title="Title" />
+    <jy-button block type="info" @click="onConfirm">Confirm</jy-button>
+  </jy-dropdown-item>
+</jy-dropdown-menu>
 ```
 
 ```js
@@ -82,28 +82,28 @@ export default {
 Use `active-color` prop to custom active color of the title and options
 
 ```html
-<van-dropdown-menu active-color="#ee0a24">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<jy-dropdown-menu active-color="#ee0a24">
+  <jy-dropdown-item v-model="value1" :options="option1" />
+  <jy-dropdown-item v-model="value2" :options="option2" />
+</jy-dropdown-menu>
 ```
 
 ### Expand Direction
 
 ```html
-<van-dropdown-menu direction="up">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<jy-dropdown-menu direction="up">
+  <jy-dropdown-item v-model="value1" :options="option1" />
+  <jy-dropdown-item v-model="value2" :options="option2" />
+</jy-dropdown-menu>
 ```
 
 ### Disabled
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" disabled :options="option1" />
-  <van-dropdown-item v-model="value2" disabled :options="option2" />
-</van-dropdown-menu>
+<jy-dropdown-menu>
+  <jy-dropdown-item v-model="value1" disabled :options="option1" />
+  <jy-dropdown-item v-model="value2" disabled :options="option2" />
+</jy-dropdown-menu>
 ```
 
 ## API

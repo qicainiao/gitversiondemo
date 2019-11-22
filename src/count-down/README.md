@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { CountDown } from 'vant';
+import { CountDown } from 'jyt';
 
 Vue.use(CountDown);
 ```
@@ -14,7 +14,7 @@ Vue.use(CountDown);
 ### Basic Usage
 
 ```html
-<van-count-down :time="time" />
+<jy-count-down :time="time" />
 ```
 
 ```js
@@ -30,7 +30,7 @@ export default {
 ### Custom Format
 
 ```html
-<van-count-down
+<jy-count-down
   :time="time"
   format="DD Day, HH:mm:ss"
 />
@@ -39,7 +39,7 @@ export default {
 ### Millisecond
 
 ```html
-<van-count-down
+<jy-count-down
   millisecond
   :time="time"
   format="HH:mm:ss:SSS"
@@ -49,13 +49,13 @@ export default {
 ### Custom Style
 
 ```html
-<van-count-down :time="time">
+<jy-count-down :time="time">
   <template v-slot="timeData">
     <span class="item">{{ timeData.hours }}</span>
     <span class="item">{{ timeData.minutes }}</span>
     <span class="item">{{ timeData.seconds }}</span>
   </template>
-</van-count-down>
+</jy-count-down>
 
 <style>
 .item {
@@ -73,7 +73,7 @@ export default {
 ### Manual Control
 
 ```html
-<van-count-down
+<jy-count-down
   ref="countDown"
   millisecond
   :time="3000"
@@ -81,11 +81,11 @@ export default {
   format="ss:SSS"
   @finish="finished"
 />
-<van-grid clickable :column-num="3">
-  <van-grid-item text="Start" icon="play-circle-o" @click="start" />
-  <van-grid-item text="Pause" icon="pause-circle-o" @click="pause" />
-  <van-grid-item text="Reset" icon="replay" @click="reset" />
-</van-grid>
+<jy-grid clickable :column-num="3">
+  <jy-grid-item text="Start" icon="play-circle-o" @click="start" />
+  <jy-grid-item text="Pause" icon="pause-circle-o" @click="pause" />
+  <jy-grid-item text="Reset" icon="replay" @click="reset" />
+</jy-grid>
 ```
 
 ```js

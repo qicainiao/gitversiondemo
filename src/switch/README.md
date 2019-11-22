@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Switch } from 'vant';
+import { Switch } from 'jyt';
 
 Vue.use(Switch);
 ```
@@ -14,7 +14,7 @@ Vue.use(Switch);
 ### Basic Usage
 
 ```html
-<van-switch v-model="checked" />
+<jy-switch v-model="checked" />
 ```
 
 ```javascript
@@ -30,31 +30,31 @@ export default {
 ### Disabled
 
 ```html
-<van-switch v-model="checked" disabled />
+<jy-switch v-model="checked" disabled />
 ```
 
 ### Loading
 
 ```html
-<van-switch v-model="checked" loading />
+<jy-switch v-model="checked" loading />
 ```
 
 ### Custom Size
 
 ```html
-<van-switch v-model="checked" size="24px" />
+<jy-switch v-model="checked" size="24px" />
 ```
 
 ### Custom Color
 
 ```html
-<van-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
+<jy-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
 ```
 
 ### Async Control
 
 ```html
-<van-switch :value="checked" @input="onInput" />
+<jy-switch :value="checked" @input="onInput" />
 ```
 
 ```js

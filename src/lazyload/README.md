@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'jyt';
 
 Vue.use(Lazyload, options);
 ```
@@ -22,8 +22,8 @@ export default {
   data() {
     return {
       imageList: [
-        'https://img.yzcdn.cn/vant/apple-1.jpg',
-        'https://img.yzcdn.cn/vant/apple-2.jpg'
+        'https://img.yzcdn.cn/jyt/apple-1.jpg',
+        'https://img.yzcdn.cn/jyt/apple-2.jpg'
       ]
     };
   }

@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tabbar, TabbarItem } from 'vant';
+import { Tabbar, TabbarItem } from 'jyt';
 
 Vue.use(Tabbar).use(TabbarItem);
 ```
@@ -16,12 +16,12 @@ Vue.use(Tabbar).use(TabbarItem);
 `v-model`默认绑定选中标签的索引值，通过修改`v-model`即可切换选中的标签
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+<jy-tabbar v-model="active">
+  <jy-tabbar-item icon="home-o">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="search">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="friends-o">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="setting-o">标签</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ```javascript
@@ -39,12 +39,12 @@ export default {
 在标签指定`name`属性的情况下，`v-model`的值为当前标签的`name`
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item name="home" icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">标签</van-tabbar-item>
-  <van-tabbar-item name="friends" icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+<jy-tabbar v-model="active">
+  <jy-tabbar-item name="home" icon="home-o">标签</jy-tabbar-item>
+  <jy-tabbar-item name="search" icon="search">标签</jy-tabbar-item>
+  <jy-tabbar-item name="friends" icon="friends-o">标签</jy-tabbar-item>
+  <jy-tabbar-item name="setting" icon="setting-o">标签</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ```javascript
@@ -62,12 +62,12 @@ export default {
 设置`dot`属性后，会在图标右上角展示一个小红点。设置`info`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search" dot>标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" info="5">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o" info="20">标签</van-tabbar-item>
-</van-tabbar>
+<jy-tabbar v-model="active">
+  <jy-tabbar-item icon="home-o">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="search" dot>标签</jy-tabbar-item>
+  <jy-tabbar-item icon="friends-o" info="5">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="setting-o" info="20">标签</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ### 自定义图标
@@ -75,18 +75,18 @@ export default {
 通过 icon 插槽自定义图标，可以通过 `slot-scope` 判断标签是否选中
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item info="3">
+<jy-tabbar v-model="active">
+  <jy-tabbar-item info="3">
     <span>自定义</span>
     <img
       slot="icon"
       slot-scope="props"
       :src="props.active ? icon.active : icon.inactive"
     >
-  </van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+  </jy-tabbar-item>
+  <jy-tabbar-item icon="search">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="setting-o">标签</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ```javascript
@@ -95,8 +95,8 @@ export default {
     return {
       active: 0,
       icon: {
-        active: 'https://img.yzcdn.cn/vant/user-active.png',
-        inactive: 'https://img.yzcdn.cn/vant/user-inactive.png'
+        active: 'https://img.yzcdn.cn/jyt/user-active.png',
+        inactive: 'https://img.yzcdn.cn/jyt/user-inactive.png'
       }
     }
   }
@@ -106,16 +106,16 @@ export default {
 ### 自定义颜色
 
 ```html
-<van-tabbar
+<jy-tabbar
   v-model="active"
   active-color="#07c160"
   inactive-color="#000"
 >
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="freinds-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+  <jy-tabbar-item icon="home-o">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="search">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="freinds-o">标签</jy-tabbar-item>
+  <jy-tabbar-item icon="setting-o">标签</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ### 路由模式
@@ -125,22 +125,22 @@ export default {
 ```html
 <router-view />
 
-<van-tabbar route>
-  <van-tabbar-item
+<jy-tabbar route>
+  <jy-tabbar-item
     replace
     to="/home"
     icon="home-o"
   >
     标签
-  </van-tabbar-item>
-  <van-tabbar-item
+  </jy-tabbar-item>
+  <jy-tabbar-item
     replace
     to="/search"
     icon="search"
   >
     标签
-  </van-tabbar-item>
-</van-tabbar>
+  </jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ## API

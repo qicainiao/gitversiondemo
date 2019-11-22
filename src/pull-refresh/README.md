@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { PullRefresh } from 'vant';
+import { PullRefresh } from 'jyt';
 
 Vue.use(PullRefresh);
 ```
@@ -16,9 +16,9 @@ Vue.use(PullRefresh);
 The `refresh` event will be triggered when pull refresh, you should set `v-model` to `false` to reset loading status after process refresh event.
 
 ```html
-<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<jy-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</jy-pull-refresh>
 ```
 
 ```javascript

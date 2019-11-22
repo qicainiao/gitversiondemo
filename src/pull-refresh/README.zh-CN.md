@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { PullRefresh } from 'vant';
+import { PullRefresh } from 'jyt';
 
 Vue.use(PullRefresh);
 ```
@@ -16,9 +16,9 @@ Vue.use(PullRefresh);
 下拉刷新时会触发 `refresh` 事件，在事件的回调函数中可以进行同步或异步操作，操作完成后将 `v-model` 设置为 `false`，表示加载完成。
 
 ```html
-<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<jy-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</jy-pull-refresh>
 ```
 
 ```javascript

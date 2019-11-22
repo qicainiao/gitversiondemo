@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Field } from 'vant';
+import { Field } from 'jyt';
 
 Vue.use(Field);
 ```
@@ -16,9 +16,9 @@ Vue.use(Field);
 The value of field is bound with v-model.
 
 ```html
-<van-cell-group>
-  <van-field v-model="value" placeholder="Username" />
-</van-cell-group>
+<jy-cell-group>
+  <jy-field v-model="value" placeholder="Username" />
+</jy-cell-group>
 ```
 
 ### Custom Type
@@ -26,8 +26,8 @@ The value of field is bound with v-model.
 Use `type` prop to custom different type fields.
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="username"
     required
     clearable
@@ -37,27 +37,27 @@ Use `type` prop to custom different type fields.
     @click-right-icon="$toast('question')"
   />
 
-  <van-field
+  <jy-field
     v-model="password"
     type="password"
     label="Password"
     placeholder="Password"
     required
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ### Disabled
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     value="Disabled"
     label="Username"
     left-icon="contact"
     disabled
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ### Error Info
@@ -65,20 +65,20 @@ Use `type` prop to custom different type fields.
 Use `error` or `error-message` to show error info
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="username"
     label="Username"
     placeholder="Username"
     error
   />
-  <van-field
+  <jy-field
     v-model="phone"
     label="Phone"
     placeholder="Phone"
     error-message="Invalid phone"
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ### Insert Button
@@ -86,17 +86,17 @@ Use `error` or `error-message` to show error info
 Use button slot to insert button
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="sms"
     center
     clearable
     label="SMS"
     placeholder="SMS"
   >
-    <van-button slot="button" size="small" type="primary">Send SMS</van-button>
-  </van-field>
-</van-cell-group>
+    <jy-button slot="button" size="small" type="primary">Send SMS</jy-button>
+  </jy-field>
+</jy-cell-group>
 ```
 
 ### Auto Resize
@@ -104,8 +104,8 @@ Use button slot to insert button
 Textarea Field can be auto resize when has `autosize` prop
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="message"
     label="Message"
     type="textarea"
@@ -113,14 +113,14 @@ Textarea Field can be auto resize when has `autosize` prop
     rows="1"
     autosize
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ### Show Word Limit
 
 ```html
-<van-cell-group>
-  <van-field
+<jy-cell-group>
+  <jy-field
     v-model="message"
     rows="2"
     autosize
@@ -130,7 +130,7 @@ Textarea Field can be auto resize when has `autosize` prop
     placeholder="请输入留言"
     show-word-limit
   />
-</van-cell-group>
+</jy-cell-group>
 ```
 
 ## API

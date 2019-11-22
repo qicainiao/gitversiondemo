@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tabbar, TabbarItem } from 'vant';
+import { Tabbar, TabbarItem } from 'jyt';
 
 Vue.use(Tabbar).use(TabbarItem);
 ```
@@ -14,12 +14,12 @@ Vue.use(Tabbar).use(TabbarItem);
 ### Basic Usage
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+<jy-tabbar v-model="active">
+  <jy-tabbar-item icon="home-o">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="search">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="friends-o">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="setting-o">Tab</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ```javascript
@@ -35,12 +35,12 @@ export default {
 ### Match by name
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item name="home" icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item name="friends" icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+<jy-tabbar v-model="active">
+  <jy-tabbar-item name="home" icon="home-o">Tab</jy-tabbar-item>
+  <jy-tabbar-item name="search" icon="search">Tab</jy-tabbar-item>
+  <jy-tabbar-item name="friends" icon="friends-o">Tab</jy-tabbar-item>
+  <jy-tabbar-item name="setting" icon="setting-o">Tab</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ```javascript
@@ -56,12 +56,12 @@ export default {
 ### Show Badge
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search" dot>Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" info="5">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o" info="20">Tab</van-tabbar-item>
-</van-tabbar>
+<jy-tabbar v-model="active">
+  <jy-tabbar-item icon="home-o">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="search" dot>Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="friends-o" info="5">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="setting-o" info="20">Tab</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ### Custom Icon
@@ -69,18 +69,18 @@ export default {
 Use `icon` slot to custom icon
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item info="3">
+<jy-tabbar v-model="active">
+  <jy-tabbar-item info="3">
     <span>Custom</span>
     <img
       slot="icon"
       slot-scope="props"
       :src="props.active ? icon.active : icon.inactive"
     >
-  </van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+  </jy-tabbar-item>
+  <jy-tabbar-item icon="search">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="setting-o">Tab</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ```javascript
@@ -89,8 +89,8 @@ export default {
     return {
       active: 0,
       icon: {
-        active: 'https://img.yzcdn.cn/vant/user-active.png',
-        inactive: 'https://img.yzcdn.cn/vant/user-inactive.png'
+        active: 'https://img.yzcdn.cn/jyt/user-active.png',
+        inactive: 'https://img.yzcdn.cn/jyt/user-inactive.png'
       }
     }
   }
@@ -100,16 +100,16 @@ export default {
 ### Custom Color
 
 ```html
-<van-tabbar
+<jy-tabbar
   v-model="active"
   active-color="#07c160"
   inactive-color="#000"
 >
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="freinds-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+  <jy-tabbar-item icon="home-o">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="search">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="freinds-o">Tab</jy-tabbar-item>
+  <jy-tabbar-item icon="setting-o">Tab</jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ### Route Mode
@@ -117,22 +117,22 @@ export default {
 ```html
 <router-view />
 
-<van-tabbar route>
-  <van-tabbar-item
+<jy-tabbar route>
+  <jy-tabbar-item
     replace
     to="/home"
     icon="home-o"
   >
     Tab
-  </van-tabbar-item>
-  <van-tabbar-item
+  </jy-tabbar-item>
+  <jy-tabbar-item
     replace
     to="/search"
     icon="search"
   >
     Tab
-  </van-tabbar-item>
-</van-tabbar>
+  </jy-tabbar-item>
+</jy-tabbar>
 ```
 
 ## API

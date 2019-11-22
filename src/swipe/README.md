@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'jyt';
 
 Vue.use(Swipe).use(SwipeItem);
 ```
@@ -16,12 +16,12 @@ Vue.use(Swipe).use(SwipeItem);
 Use `autoplay` prop to set autoplay interval
 
 ```html
-<van-swipe :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<jy-swipe :autoplay="3000" indicator-color="white">
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
+</jy-swipe>
 ```
 
 ### Image Lazyload
@@ -29,11 +29,11 @@ Use `autoplay` prop to set autoplay interval
 Use [Lazyload](#/en-US/lazyload) component to lazyload image
 
 ```html
-<van-swipe>
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<jy-swipe>
+  <jy-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </van-swipe-item>
-</van-swipe>
+  </jy-swipe-item>
+</jy-swipe>
 ```
 
 ```javascript
@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       images: [
-        'https://img.yzcdn.cn/vant/apple-1.jpg',
-        'https://img.yzcdn.cn/vant/apple-2.jpg'
+        'https://img.yzcdn.cn/jyt/apple-1.jpg',
+        'https://img.yzcdn.cn/jyt/apple-2.jpg'
       ]
     }
   }
@@ -52,12 +52,12 @@ export default {
 ### change event
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<jy-swipe @change="onChange">
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
+</jy-swipe>
 ```
 
 ```js
@@ -73,38 +73,38 @@ export default {
 ### Vertical Scrolling
 
 ```html
-<van-swipe :autoplay="3000" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<jy-swipe :autoplay="3000" vertical>
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
+</jy-swipe>
 ```
 
 ### Set Swiper Item Size
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<jy-swipe :loop="false" :width="300">
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
+</jy-swipe>
 ```
 
 ### Custom Indicator
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<jy-swipe @change="onChange">
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
 
   <div class="custom-indicator" slot="indicator">
     {{ current + 1 }}/4
   </div>
-</van-swipe>
+</jy-swipe>
 ```
 
 ```js

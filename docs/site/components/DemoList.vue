@@ -17,7 +17,7 @@
 
     <h1 class="vant-title">
       <img src="https://img.yzcdn.cn/vant/logo.png">
-      <span>Vant</span>
+      <span>JYH5</span>
     </h1>
     <h2 class="vant-desc">{{ description }}</h2>
     <template v-for="item in navList">

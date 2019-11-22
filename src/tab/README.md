@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tab, Tabs } from 'vant';
+import { Tab, Tabs } from 'jyt';
 
 Vue.use(Tab).use(Tabs);
 ```
@@ -16,11 +16,11 @@ Vue.use(Tab).use(Tabs);
 The first tab is actived by default, you can set `v-model` to active specified tab.
 
 ```html
-<van-tabs v-model="active">
-  <van-tab v-for="index in 4" :title="'tab' + index">
+<jy-tabs v-model="active">
+  <jy-tab v-for="index in 4" :title="'tab' + index">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ```js
@@ -36,11 +36,11 @@ export default {
 ### Match By Name
 
 ```html
-<van-tabs v-model="activeName">
-  <van-tab title="tab 1" name="a">content of tab 1</van-tab>
-  <van-tab title="tab 2" name="b">content of tab 2</van-tab>
-  <van-tab title="tab 3" name="c">content of tab 3</van-tab>
-</van-tabs>
+<jy-tabs v-model="activeName">
+  <jy-tab title="tab 1" name="a">content of tab 1</jy-tab>
+  <jy-tab title="tab 2" name="b">content of tab 2</jy-tab>
+  <jy-tab title="tab 3" name="c">content of tab 3</jy-tab>
+</jy-tabs>
 ```
 
 ```js
@@ -58,23 +58,23 @@ export default {
 By default more than 4 tabs, you can scroll through the tabs. You can set `swipe-threshold` attribute to customize threshold number.
 
 ```html
-<van-tabs>
-  <van-tab v-for="index in 8" :title="'tab' + index">
+<jy-tabs>
+  <jy-tab v-for="index in 8" :title="'tab' + index">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ### Disabled Tab
 
-You can set `disabled` attribute on the corresponding `van-tab`. 
+You can set `disabled` attribute on the corresponding `jy-tab`. 
 
 ```html
-<van-tabs @disabled="onClickDisabled">
-  <van-tab v-for="index in 3" :title="'tab' + index" :disabled="index === 2">
+<jy-tabs @disabled="onClickDisabled">
+  <jy-tab v-for="index in 3" :title="'tab' + index" :disabled="index === 2">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ```javascript
@@ -92,21 +92,21 @@ export default {
 Tabs styled as cards.
 
 ```html
-<van-tabs type="card">
-  <van-tab v-for="index in 3" :title="'tab' + index">
+<jy-tabs type="card">
+  <jy-tab v-for="index in 3" :title="'tab' + index">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ### Click Event
 
 ```html
-<van-tabs @click="onClick">
-  <van-tab v-for="index in 2" :title="'tab' + index">
+<jy-tabs @click="onClick">
+  <jy-tab v-for="index in 2" :title="'tab' + index">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ```javascript
@@ -124,11 +124,11 @@ export default {
 In sticky mode, the tab will be fixed to top when scroll to top
 
 ```html
-<van-tabs v-model="active" sticky>
-  <van-tab v-for="index in 4" :title="'tab ' + index">
+<jy-tabs v-model="active" sticky>
+  <jy-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ### Custom title
@@ -136,14 +136,14 @@ In sticky mode, the tab will be fixed to top when scroll to top
 Use title slot to custom tab title
 
 ```html
-<van-tabs v-model="active">
-  <van-tab v-for="index in 2">
+<jy-tabs v-model="active">
+  <jy-tab v-for="index in 2">
     <div slot="title">
-      <van-icon name="more-o" />tab
+      <jy-icon name="more-o" />tab
     </div>
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ### Switch Animation
@@ -151,11 +151,11 @@ Use title slot to custom tab title
 Use `animated` props to change tabs with animation
 
 ```html
-<van-tabs v-model="active" animated>
-  <van-tab v-for="index in 4" :title="'tab ' + index">
+<jy-tabs v-model="active" animated>
+  <jy-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ### Swipeable
@@ -163,11 +163,11 @@ Use `animated` props to change tabs with animation
 In swipeable mode, you can switch tabs with swipe gestrue in the content
 
 ```html
-<van-tabs v-model="active" swipeable>
-  <van-tab v-for="index in 4" :title="'tab ' + index">
+<jy-tabs v-model="active" swipeable>
+  <jy-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </jy-tab>
+</jy-tabs>
 ```
 
 ## API

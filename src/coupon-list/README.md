@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { CouponCell, CouponList } from 'vant';
+import { CouponCell, CouponList } from 'jyt';
 
 Vue.use(CouponCell).use(CouponList);
 ```
@@ -15,22 +15,22 @@ Vue.use(CouponCell).use(CouponList);
 
 ```html
 <!-- Coupon Cell -->
-<van-coupon-cell
+<jy-coupon-cell
   :coupons="coupons"
   :chosen-coupon="chosenCoupon"
   @click="showList = true"
 />
 
 <!-- Coupon List -->
-<van-popup v-model="showList" position="bottom">
-  <van-coupon-list
+<jy-popup v-model="showList" position="bottom">
+  <jy-coupon-list
     :coupons="coupons"
     :chosen-coupon="chosenCoupon"
     :disabled-coupons="disabledCoupons"
     @change="onChange"
     @exchange="onExchange"
   />
-</van-popup>
+</jy-popup>
 ```
 
 ```javascript
@@ -98,7 +98,7 @@ export default {
 | close-button-text | Close button text | *string* | `Close` | - |
 | input-placeholder | Input placeholder | *string* | `Coupon code` | - |
 | currency | Currency symbol |  *string* | `¥` | - |
-| empty-image | Placeholder image when list is empty | *string* | `https://img.yzcdn.cn/vant/coupon-empty.png` | - |
+| empty-image | Placeholder image when list is empty | *string* | `https://img.yzcdn.cn/jyt/coupon-empty.png` | - |
 
 ### CouponList Events
 

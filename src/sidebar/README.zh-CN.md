@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Sidebar, SidebarItem } from 'vant';
+import { Sidebar, SidebarItem } from 'jyt';
 
 Vue.use(Sidebar);
 Vue.use(SidebarItem);
@@ -17,11 +17,11 @@ Vue.use(SidebarItem);
 通过`v-model`绑定当前选中项的索引
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="标签名称" />
-  <van-sidebar-item title="标签名称" />
-  <van-sidebar-item title="标签名称" />
-</van-sidebar>
+<jy-sidebar v-model="activeKey">
+  <jy-sidebar-item title="标签名称" />
+  <jy-sidebar-item title="标签名称" />
+  <jy-sidebar-item title="标签名称" />
+</jy-sidebar>
 ```
 
 ``` javascript
@@ -39,11 +39,11 @@ export default {
 设置`dot`属性后，会在右上角展示一个小红点。设置`info`属性后，会在右上角展示相应的徽标
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="标签名称" dot />
-  <van-sidebar-item title="标签名称" info="5" />
-  <van-sidebar-item title="标签名称" info="99+" />
-</van-sidebar>
+<jy-sidebar v-model="activeKey">
+  <jy-sidebar-item title="标签名称" dot />
+  <jy-sidebar-item title="标签名称" info="5" />
+  <jy-sidebar-item title="标签名称" info="99+" />
+</jy-sidebar>
 ```
 
 ### 禁用选项
@@ -51,11 +51,11 @@ export default {
 通过`disabled`属性禁用选项
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="标签名称" />
-  <van-sidebar-item title="标签名称" disabled />
-  <van-sidebar-item title="标签名称" />
-</van-sidebar>
+<jy-sidebar v-model="activeKey">
+  <jy-sidebar-item title="标签名称" />
+  <jy-sidebar-item title="标签名称" disabled />
+  <jy-sidebar-item title="标签名称" />
+</jy-sidebar>
 ```
 
 ## API

@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Picker } from 'vant';
+import { Picker } from 'jyt';
 
 Vue.use(Picker);
 ```
@@ -20,7 +20,7 @@ Vue.use(Picker);
 对于单列选择器，传入数值格式的 columns 即可，同时可以监听选项改变的 change 事件
 
 ```html
-<van-picker :columns="columns" @change="onChange" />
+<jy-picker :columns="columns" @change="onChange" />
 ```
 
 ```javascript
@@ -43,7 +43,7 @@ export default {
 单列选择器可以直接通过`default-index`属性设置初始选中项的索引值
 
 ```html
-<van-picker
+<jy-picker
   :columns="columns"
   :default-index="2"
   @change="onChange"
@@ -55,7 +55,7 @@ export default {
 通常选择器组件会传入`show-toolbar`属性以展示顶部操作栏，并可以监听对应的`confirm`和`cancel`事件
 
 ```html
-<van-picker
+<jy-picker
   show-toolbar
   title="标题"
   :columns="columns"
@@ -85,7 +85,7 @@ export default {
 ### 搭配弹出层使用
 
 ```html
-<van-field
+<jy-field
   readonly
   clickable
   label="城市"
@@ -94,14 +94,14 @@ export default {
   @click="showPicker = true"
 />
 
-<van-popup v-model="showPicker" position="bottom">
-  <van-picker
+<jy-popup v-model="showPicker" position="bottom">
+  <jy-picker
     show-toolbar
     :columns="columns"
     @cancel="showPicker = false"
     @confirm="onConfirm"
   />
-</van-popup>
+</jy-popup>
 ```
 
 ```js
@@ -127,7 +127,7 @@ export default {
 选项可以为对象结构，通过设置 disabled 来禁用该选项
 
 ```html
-<van-picker :columns="columns" />
+<jy-picker :columns="columns" />
 ```
 
 ```javascript
@@ -147,7 +147,7 @@ export default {
 ### 多列联动
 
 ```html
-<van-picker :columns="columns" @change="onChange" />
+<jy-picker :columns="columns" @change="onChange" />
 ```
 
 ```javascript
@@ -185,7 +185,7 @@ export default {
 若选择器数据是异步获取的，可以通过 `loading` 属性显示加载提示
 
 ```html
-<van-picker :columns="columns" loading />
+<jy-picker :columns="columns" loading />
 ```
 
 ## API

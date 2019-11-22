@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { IndexBar, IndexAnchor } from 'vant';
+import { IndexBar, IndexAnchor } from 'jyt';
 
 Vue.use(IndexBar).use(IndexAnchor);
 ```
@@ -16,19 +16,19 @@ Vue.use(IndexBar).use(IndexAnchor);
 点击索引栏时，会自动跳转到对应的`IndexAnchor`锚点位置
 
 ```html
-<van-index-bar>
-  <van-index-anchor index="A" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
+<jy-index-bar>
+  <jy-index-anchor index="A" />
+  <jy-cell title="文本" />
+  <jy-cell title="文本" />
+  <jy-cell title="文本" />
 
-  <van-index-anchor index="B" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
+  <jy-index-anchor index="B" />
+  <jy-cell title="文本" />
+  <jy-cell title="文本" />
+  <jy-cell title="文本" />
 
   ...
-</van-index-bar>
+</jy-index-bar>
 ```
 
 ### 自定义索引列表
@@ -36,19 +36,19 @@ Vue.use(IndexBar).use(IndexAnchor);
 可以通过`index-list`属性自定义展示的索引字符列表，
 
 ```html
-<van-index-bar :index-list="indexList">
-  <van-index-anchor index="1">标题1</van-index-anchor>
-  <van-cell title="文本" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
+<jy-index-bar :index-list="indexList">
+  <jy-index-anchor index="1">标题1</jy-index-anchor>
+  <jy-cell title="文本" />
+  <jy-cell title="文本" />
+  <jy-cell title="文本" />
 
-  <van-index-anchor index="2">标题2</van-index-anchor>
-  <van-cell title="文本" />
-  <van-cell title="文本" />
-  <van-cell title="文本" />
+  <jy-index-anchor index="2">标题2</jy-index-anchor>
+  <jy-cell title="文本" />
+  <jy-cell title="文本" />
+  <jy-cell title="文本" />
 
   ...
-</van-index-bar>
+</jy-index-bar>
 ```
 
 ```js

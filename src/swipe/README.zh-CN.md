@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'jyt';
 
 Vue.use(Swipe).use(SwipeItem);
 ```
@@ -16,12 +16,12 @@ Vue.use(Swipe).use(SwipeItem);
 通过`autoplay`属性设置自动轮播间隔
 
 ```html
-<van-swipe :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<jy-swipe :autoplay="3000" indicator-color="white">
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
+</jy-swipe>
 ```
 
 ### 图片懒加载
@@ -29,11 +29,11 @@ Vue.use(Swipe).use(SwipeItem);
 配合 [Lazyload](#/zh-CN/lazyload) 组件实现图片懒加载
 
 ```html
-<van-swipe :autoplay="3000">
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<jy-swipe :autoplay="3000">
+  <jy-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </van-swipe-item>
-</van-swipe>
+  </jy-swipe-item>
+</jy-swipe>
 ```
 
 ```javascript
@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       images: [
-        'https://img.yzcdn.cn/vant/apple-1.jpg',
-        'https://img.yzcdn.cn/vant/apple-2.jpg'
+        'https://img.yzcdn.cn/jyt/apple-1.jpg',
+        'https://img.yzcdn.cn/jyt/apple-2.jpg'
       ]
     }
   }
@@ -52,12 +52,12 @@ export default {
 ### 监听 change 事件
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<jy-swipe @change="onChange">
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
+</jy-swipe>
 ```
 
 ```js
@@ -75,12 +75,12 @@ export default {
 设置`vertical`属性后滑块会纵向排列，此时需要指定滑块容器的高度
 
 ```html
-<van-swipe style="height: 200px;" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<jy-swipe style="height: 200px;" vertical>
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
+</jy-swipe>
 ```
 
 ### 控制滑块大小
@@ -88,12 +88,12 @@ export default {
 滑块默认宽度为`100%`，可以通过`width`属性设置滑块的宽度，此属性不能与循环播放同时使用
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<jy-swipe :loop="false" :width="300">
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
+</jy-swipe>
 ```
 
 ### 自定义指示器
@@ -101,16 +101,16 @@ export default {
 通过`indicator`插槽可以自定义指示器的样式
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<jy-swipe @change="onChange">
+  <jy-swipe-item>1</jy-swipe-item>
+  <jy-swipe-item>2</jy-swipe-item>
+  <jy-swipe-item>3</jy-swipe-item>
+  <jy-swipe-item>4</jy-swipe-item>
 
   <div class="custom-indicator" slot="indicator">
     {{ current + 1 }}/4
   </div>
-</van-swipe>
+</jy-swipe>
 ```
 
 ```js

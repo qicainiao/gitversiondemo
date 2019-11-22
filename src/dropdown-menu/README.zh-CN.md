@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { DropdownMenu, DropdownItem } from 'vant';
+import { DropdownMenu, DropdownItem } from 'jyt';
 
 Vue.use(DropdownMenu).use(DropdownItem);
 ```
@@ -14,10 +14,10 @@ Vue.use(DropdownMenu).use(DropdownItem);
 ### 基础用法
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<jy-dropdown-menu>
+  <jy-dropdown-item v-model="value1" :options="option1" />
+  <jy-dropdown-item v-model="value2" :options="option2" />
+</jy-dropdown-menu>
 ```
 
 ```js
@@ -46,14 +46,14 @@ export default {
 通过插槽可以自定义`DropdownItem`的内容，此时需要使用实例上的`toggle`方法手动控制菜单的显示
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value" :options="option" />
-  <van-dropdown-item title="筛选" ref="item">
-    <van-switch-cell v-model="switch1" title="包邮" />
-    <van-switch-cell v-model="switch2" title="团购" />
-    <van-button block type="info" @click="onConfirm">确认</van-button>
-  </van-dropdown-item>
-</van-dropdown-menu>
+<jy-dropdown-menu>
+  <jy-dropdown-item v-model="value" :options="option" />
+  <jy-dropdown-item title="筛选" ref="item">
+    <jy-switch-cell v-model="switch1" title="包邮" />
+    <jy-switch-cell v-model="switch2" title="团购" />
+    <jy-button block type="info" @click="onConfirm">确认</jy-button>
+  </jy-dropdown-item>
+</jy-dropdown-menu>
 ```
 
 ```js
@@ -84,10 +84,10 @@ export default {
 通过`active-color`属性可以自定义菜单标题和选项的选中态颜色
 
 ```html
-<van-dropdown-menu active-color="#ee0a24">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<jy-dropdown-menu active-color="#ee0a24">
+  <jy-dropdown-item v-model="value1" :options="option1" />
+  <jy-dropdown-item v-model="value2" :options="option2" />
+</jy-dropdown-menu>
 ```
 
 ### 向上展开
@@ -95,19 +95,19 @@ export default {
 将`direction`属性值设置为`up`，菜单即可向上展开
 
 ```html
-<van-dropdown-menu direction="up">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<jy-dropdown-menu direction="up">
+  <jy-dropdown-item v-model="value1" :options="option1" />
+  <jy-dropdown-item v-model="value2" :options="option2" />
+</jy-dropdown-menu>
 ```
 
 ### 禁用菜单
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" disabled :options="option1" />
-  <van-dropdown-item v-model="value2" disabled :options="option2" />
-</van-dropdown-menu>
+<jy-dropdown-menu>
+  <jy-dropdown-item v-model="value1" disabled :options="option1" />
+  <jy-dropdown-item v-model="value2" disabled :options="option2" />
+</jy-dropdown-menu>
 ```
 
 ## API

@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { CountDown } from 'vant';
+import { CountDown } from 'jyt';
 
 Vue.use(CountDown);
 ```
@@ -16,7 +16,7 @@ Vue.use(CountDown);
 `time`属性表示倒计时总时长，单位为毫秒
 
 ```html
-<van-count-down :time="time" />
+<jy-count-down :time="time" />
 ```
 
 ```js
@@ -34,7 +34,7 @@ export default {
 通过`format`属性设置倒计时文本的内容
 
 ```html
-<van-count-down
+<jy-count-down
   :time="time"
   format="DD 天 HH 时 mm 分 ss 秒"
 />
@@ -45,7 +45,7 @@ export default {
 倒计时默认每秒渲染一次，设置`millisecond`属性可以开启毫秒级渲染
 
 ```html
-<van-count-down
+<jy-count-down
   millisecond
   :time="time"
   format="HH:mm:ss:SSS"
@@ -57,13 +57,13 @@ export default {
 通过插槽自定义倒计时的样式，`timeData`对象格式见下方表格
 
 ```html
-<van-count-down :time="time">
+<jy-count-down :time="time">
   <template v-slot="timeData">
     <span class="item">{{ timeData.hours }}</span>
     <span class="item">{{ timeData.minutes }}</span>
     <span class="item">{{ timeData.seconds }}</span>
   </template>
-</van-count-down>
+</jy-count-down>
 
 <style>
 .item {
@@ -83,7 +83,7 @@ export default {
 通过 ref 获取到组件实例后，可以调用`start`、`pause`、`reset`方法
 
 ```html
-<van-count-down
+<jy-count-down
   ref="countDown"
   millisecond
   :time="3000"
@@ -91,11 +91,11 @@ export default {
   format="ss:SSS"
   @finish="finished"
 />
-<van-grid clickable>
-  <van-grid-item text="开始" icon="play-circle-o" @click="start" />
-  <van-grid-item text="暂停" icon="pause-circle-o" @click="pause" />
-  <van-grid-item text="重置" icon="replay" @click="reset" />
-</van-grid>
+<jy-grid clickable>
+  <jy-grid-item text="开始" icon="play-circle-o" @click="start" />
+  <jy-grid-item text="暂停" icon="pause-circle-o" @click="pause" />
+  <jy-grid-item text="重置" icon="replay" @click="reset" />
+</jy-grid>
 ```
 
 ```js

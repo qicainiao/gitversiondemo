@@ -9,8 +9,8 @@ The default language of Vant is Chinese. If you want to use other languages, you
 Vant supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to different languages.
 
 ```js
-import { Locale } from 'vant';
-import enUS from 'vant/lib/locale/lang/en-US';
+import { Locale } from 'jyt';
+import enUS from 'jyt/lib/locale/lang/en-US';
 
 Locale.use('en-US', enUS);
 ```
@@ -20,11 +20,11 @@ Locale.use('en-US', enUS);
 Use `Locale.add` method to modify the default configs.
 
 ```js
-import { Locale } from 'vant';
+import { Locale } from 'jyt';
 
 const messages = {
   'en-US': {
-    vanPicker: {
+    jyPicker: {
       confirm: 'Close'
     }
   }
@@ -46,4 +46,4 @@ Current supported languages:
 | Turkish | tr-TR |
 | Spanish (Spain) | es-ES |
 
-> View all language configs [Here](https://github.com/youzan/vant/tree/dev/src/locale/lang).
+> View all language configs [Here](https://github.com/youzan/jyt/tree/dev/src/locale/lang).

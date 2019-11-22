@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { RadioGroup, Radio } from 'vant';
+import { RadioGroup, Radio } from 'jyt';
 
 Vue.use(RadioGroup);
 Vue.use(Radio);
@@ -17,10 +17,10 @@ Vue.use(Radio);
 Use `v-model` to bind the name of checked radio
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<jy-radio-group v-model="radio">
+  <jy-radio name="1">Radio 1</jy-radio>
+  <jy-radio name="2">Radio 2</jy-radio>
+</jy-radio-group>
 ```
 
 ```javascript
@@ -36,19 +36,19 @@ export default {
 ### Disabled
 
 ```html
-<van-radio-group v-model="radio" disabled>
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<jy-radio-group v-model="radio" disabled>
+  <jy-radio name="1">Radio 1</jy-radio>
+  <jy-radio name="2">Radio 2</jy-radio>
+</jy-radio-group>
 ```
 
 ### Custom Color
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" checked-color="#07c160">Radio 1</van-radio>
-  <van-radio name="2" checked-color="#07c160">Radio 2</van-radio>
-</van-radio-group>
+<jy-radio-group v-model="radio">
+  <jy-radio name="1" checked-color="#07c160">Radio 1</jy-radio>
+  <jy-radio name="2" checked-color="#07c160">Radio 2</jy-radio>
+</jy-radio-group>
 ```
 
 ### Custom Icon
@@ -56,24 +56,24 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">
+<jy-radio-group v-model="radio">
+  <jy-radio name="1">
     Radio 1
     <img
       slot="icon"
       slot-scope="props"
       :src="props.checked ? activeIcon : inactiveIcon"
     >
-  </van-radio>
-  <van-radio name="2">
+  </jy-radio>
+  <jy-radio name="2">
     Radio 2
     <img
       slot="icon"
       slot-scope="props"
       :src="props.checked ? activeIcon : inactiveIcon"
     >
-  </van-radio>
-</van-radio-group>
+  </jy-radio>
+</jy-radio-group>
 ```
 
 ```js
@@ -81,8 +81,8 @@ export default {
   data() {
     return {
       radio: '1',
-      activeIcon: 'https://img.yzcdn.cn/vant/user-active.png',
-      inactiveIcon: 'https://img.yzcdn.cn/vant/user-inactive.png'
+      activeIcon: 'https://img.yzcdn.cn/jyt/user-active.png',
+      inactiveIcon: 'https://img.yzcdn.cn/jyt/user-inactive.png'
     };
   }
 };
@@ -91,16 +91,16 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-radio-group v-model="radio">
-  <van-cell-group>
-    <van-cell title="Radio 1" clickable @click="radio = '1'">
-      <van-radio slot="right-icon" name="1" />
-    </van-cell>
-    <van-cell title="Radio 2" clickable @click="radio = '2'">
-      <van-radio slot="right-icon" name="2" />
-    </van-cell>
-  </van-cell-group>
-</van-radio-group>
+<jy-radio-group v-model="radio">
+  <jy-cell-group>
+    <jy-cell title="Radio 1" clickable @click="radio = '1'">
+      <jy-radio slot="right-icon" name="1" />
+    </jy-cell>
+    <jy-cell title="Radio 2" clickable @click="radio = '2'">
+      <jy-radio slot="right-icon" name="2" />
+    </jy-cell>
+  </jy-cell-group>
+</jy-radio-group>
 ```
 
 ## API

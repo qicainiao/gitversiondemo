@@ -988,7 +988,7 @@
     "type": "*string*"
   },
   "van-coupon-list/empty-image": {
-    "description": "列表为空时的占位图, default: https://img.yzcdn.cn/vant/coupon-empty.png",
+    "description": "列表为空时的占位图, default: https://img.yzcdn.cn/jyt/coupon-empty.png",
     "type": "*string*"
   },
   "van-coupon-list/change": {
@@ -1536,7 +1536,7 @@
     "type": "20px"
   },
   "van-icon/class-prefix": {
-    "description": "类名前缀, default: van-icon",
+    "description": "类名前缀, default: jy-icon",
     "type": "*string*"
   },
   "van-icon/tag": {

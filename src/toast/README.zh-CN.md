@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'jyt';
 
 Vue.use(Toast);
 ```
@@ -52,7 +52,7 @@ Toast({
 
 Toast({
   message: '展示图片',
-  icon: 'https://img.yzcdn.cn/vant/logo.png'
+  icon: 'https://img.yzcdn.cn/jyt/logo.png'
 });
 ```
 
@@ -145,7 +145,7 @@ Toast.resetDefaultOptions('loading');
 | position | 位置，可选值为 `top` `bottom` | *string* | `middle` | - |
 | message | 文本内容，支持通过`\n`换行 | *string* | `''` | - | - |
 | icon | 自定义图标，支持传入图标名称或图片链接，可选值见 [Icon 组件](#/zh-CN/icon) | *string* | - | 2.0.1 |
-| iconPrefix | 图标类名前缀 | *string* | `van-icon` | 2.0.9 |
+| iconPrefix | 图标类名前缀 | *string* | `jy-icon` | 2.0.9 |
 | overlay | 是否显示背景遮罩层 | *boolean* | `false` | 2.2.13 |
 | forbidClick | 是否禁止背景点击 | *boolean* | `false` | - |
 | closeOnClick | 是否在点击后关闭 | *boolean* | `false` | 2.1.5 |

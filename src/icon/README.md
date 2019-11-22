@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Icon } from 'vant';
+import { Icon } from 'jyt';
 
 Vue.use(Icon);
 ```
@@ -16,16 +16,16 @@ Vue.use(Icon);
 Use `name` prop to set icon name or icon URL
 
 ```html
-<van-icon name="close" />
-<van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+<jy-icon name="close" />
+<jy-icon name="https://b.yzcdn.cn/jyt/icon-demo-1126.png" />
 ```
 
 ### Show Info
 
 ```html
-<van-icon name="chat" dot />
-<van-icon name="chat" info="9" />
-<van-icon name="chat" info="99+" />
+<jy-icon name="chat" dot />
+<jy-icon name="chat" info="9" />
+<jy-icon name="chat" info="99+" />
 ```
 
 ### Use local font file
@@ -33,7 +33,7 @@ Use `name` prop to set icon name or icon URL
 Icon uses font file in `yzcdn.cn` by default，if you want to use the local font file，please import the following css file.
 
 ```js
-import 'vant/lib/icon/local.css';
+import 'jyt/lib/icon/local.css';
 ```
 
 ### Add custom iconfont
@@ -54,7 +54,7 @@ import 'vant/lib/icon/local.css';
 ```
 
 ```html
-<van-icon class-prefix="my-icon" name="extra" />
+<jy-icon class-prefix="my-icon" name="extra" />
 ```
 
 ## API
@@ -68,7 +68,7 @@ import 'vant/lib/icon/local.css';
 | info | Content of the badge | *string \| number* | `''` | - |
 | color | Icon color | *string* | `inherit` | - |
 | size | Icon size | *string \| number* | `inherit` | - |
-| class-prefix | ClassName prefix | *string* | `van-icon` | - |
+| class-prefix | ClassName prefix | *string* | `jy-icon` | - |
 | tag | HTML Tag | *string* | `i` | - |
 
 ### Events

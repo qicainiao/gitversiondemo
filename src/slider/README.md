@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Slider } from 'vant';
+import { Slider } from 'jyt';
 
 Vue.use(Slider);
 ```
@@ -14,7 +14,7 @@ Vue.use(Slider);
 ### Basic Usage
 
 ```html
-<van-slider v-model="value" @change="onChange" />
+<jy-slider v-model="value" @change="onChange" />
 ```
 
 ```js
@@ -36,25 +36,25 @@ export default {
 ### Range
 
 ```html
-<van-slider v-model="value" :min="-50" :max="50" />
+<jy-slider v-model="value" :min="-50" :max="50" />
 ```
 
 ### Disabled
 
 ```html
-<van-slider v-model="value" disabled />
+<jy-slider v-model="value" disabled />
 ```
 
 ### Step size
 
 ```html
-<van-slider v-model="value" :step="10" />
+<jy-slider v-model="value" :step="10" />
 ```
 
 ### Custom style
 
 ```html
-<van-slider
+<jy-slider
   v-model="value"
   bar-height="4px"
   active-color="#ee0a24"
@@ -64,7 +64,7 @@ export default {
 ### Custom button
 
 ```html
-<van-slider
+<jy-slider
   v-model="value"
   active-color="#ee0a24"
 >
@@ -74,14 +74,14 @@ export default {
   >
     {{ value }}
   </div>
-</van-slider>
+</jy-slider>
 ```
 
 ### Vertical
 
 ```html
 <div :style="{ height: '100px' }">
-  <van-slider v-model="value" vertical />
+  <jy-slider v-model="value" vertical />
 </div>
 ```
 

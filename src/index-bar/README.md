@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { IndexBar } from 'vant';
+import { IndexBar } from 'jyt';
 
 Vue.use(IndexBar);
 ```
@@ -14,37 +14,37 @@ Vue.use(IndexBar);
 ### Basic Usage
 
 ```html
-<van-index-bar>
-  <van-index-anchor index="A" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+<jy-index-bar>
+  <jy-index-anchor index="A" />
+  <jy-cell title="Text" />
+  <jy-cell title="Text" />
+  <jy-cell title="Text" />
 
-  <van-index-anchor index="B" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+  <jy-index-anchor index="B" />
+  <jy-cell title="Text" />
+  <jy-cell title="Text" />
+  <jy-cell title="Text" />
 
   ...
-</van-index-bar>
+</jy-index-bar>
 ```
 
 ### Custom Index List
 
 ```html
-<van-index-bar :index-list="indexList">
-  <van-index-anchor index="1">Title 1</van-index-anchor>
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+<jy-index-bar :index-list="indexList">
+  <jy-index-anchor index="1">Title 1</jy-index-anchor>
+  <jy-cell title="Text" />
+  <jy-cell title="Text" />
+  <jy-cell title="Text" />
 
-  <van-index-anchor index="2">Title 2</van-index-anchor>
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+  <jy-index-anchor index="2">Title 2</jy-index-anchor>
+  <jy-cell title="Text" />
+  <jy-cell title="Text" />
+  <jy-cell title="Text" />
 
   ...
-</van-index-bar>
+</jy-index-bar>
 ```
 
 ```js

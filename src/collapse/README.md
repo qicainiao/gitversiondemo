@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Collapse, CollapseItem } from 'vant';
+import { Collapse, CollapseItem } from 'jyt';
 
 Vue.use(Collapse).use(CollapseItem);
 ```
@@ -16,11 +16,11 @@ Vue.use(Collapse).use(CollapseItem);
 Use `v-model` to control the name of active panels
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item title="Title1" name="1">Content</van-collapse-item>
-  <van-collapse-item title="Title2" name="2">Content</van-collapse-item>
-  <van-collapse-item title="Title3" name="3" disabled>Content</van-collapse-item>
-</van-collapse>
+<jy-collapse v-model="activeNames">
+  <jy-collapse-item title="Title1" name="1">Content</jy-collapse-item>
+  <jy-collapse-item title="Title2" name="2">Content</jy-collapse-item>
+  <jy-collapse-item title="Title3" name="3" disabled>Content</jy-collapse-item>
+</jy-collapse>
 ```
 
 ``` javascript
@@ -38,11 +38,11 @@ export default {
 In accordion mode, only one panel can be expanded at the same time.
 
 ```html
-<van-collapse v-model="activeName" accordion>
-  <van-collapse-item title="Title1" name="1">Content</van-collapse-item>
-  <van-collapse-item title="Title2" name="2">Content</van-collapse-item>
-  <van-collapse-item title="Title3" name="3">Content</van-collapse-item>
-</van-collapse>
+<jy-collapse v-model="activeName" accordion>
+  <jy-collapse-item title="Title1" name="1">Content</jy-collapse-item>
+  <jy-collapse-item title="Title2" name="2">Content</jy-collapse-item>
+  <jy-collapse-item title="Title3" name="3">Content</jy-collapse-item>
+</jy-collapse>
 ```
 
 ``` javascript
@@ -58,19 +58,19 @@ export default {
 ### Custom title
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item name="1">
-    <div slot="title">Title1 <van-icon name="question-o" /></div>
+<jy-collapse v-model="activeNames">
+  <jy-collapse-item name="1">
+    <div slot="title">Title1 <jy-icon name="question-o" /></div>
     Content
-  </van-collapse-item>
-  <van-collapse-item
+  </jy-collapse-item>
+  <jy-collapse-item
     title="Title2"
     name="2"
     icon="shop-o"
   >
     Content
-  </van-collapse-item>
-</van-collapse>
+  </jy-collapse-item>
+</jy-collapse>
 ```
 
 ``` javascript

@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Grid, GridItem } from 'vant';
+import { Grid, GridItem } from 'jyt';
 
 Vue.use(Grid).use(GridItem);
 ```
@@ -14,85 +14,85 @@ Vue.use(Grid).use(GridItem);
 ### Basic Usage
 
 ```html
-<van-grid>
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-</van-grid>
+<jy-grid>
+  <jy-grid-item icon="photo-o" text="Text" />
+  <jy-grid-item icon="photo-o" text="Text" />
+  <jy-grid-item icon="photo-o" text="Text" />
+  <jy-grid-item icon="photo-o" text="Text" />
+</jy-grid>
 ```
 
 ### Column Num
 
 ```html
-<van-grid :column-num="3">
-  <van-grid-item
+<jy-grid :column-num="3">
+  <jy-grid-item
     v-for="value in 6"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</jy-grid>
 ```
 
 ### Custom Content
 
 ```html
-<van-grid :border="false" :column-num="3">
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-  </van-grid-item>
-</van-grid>
+<jy-grid :border="false" :column-num="3">
+  <jy-grid-item>
+    <jy-image src="https://img.yzcdn.cn/jyt/apple-1.jpg" />
+  </jy-grid-item>
+  <jy-grid-item>
+    <jy-image src="https://img.yzcdn.cn/jyt/apple-2.jpg" />
+  </jy-grid-item>
+  <jy-grid-item>
+    <jy-image src="https://img.yzcdn.cn/jyt/apple-3.jpg" />
+  </jy-grid-item>
+</jy-grid>
 ```
 
 ### Square
 
 ```html
-<van-grid square>
-  <van-grid-item
+<jy-grid square>
+  <jy-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</jy-grid>
 ```
 
 ### Gutter
 
 ```html
-<van-grid :gutter="10">
-  <van-grid-item
+<jy-grid :gutter="10">
+  <jy-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</jy-grid>
 ```
 
 ### Route
 
 ```html
-<van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="Vue Router" to="/" />
-  <van-grid-item icon="search" text="URL" url="/vant/mobile.html" />
-</van-grid>
+<jy-grid clickable :column-num="2">
+  <jy-grid-item icon="home-o" text="Vue Router" to="/" />
+  <jy-grid-item icon="search" text="URL" url="/jyt/mobile.html" />
+</jy-grid>
 ```
 
 ### Show Info
 
 ```html
-<van-grid :column-num="2">
-  <van-grid-item icon="home-o" text="Text" dot />
-  <van-grid-item icon="search" text="Text" info="99+" />
-</van-grid>
+<jy-grid :column-num="2">
+  <jy-grid-item icon="home-o" text="Text" dot />
+  <jy-grid-item icon="search" text="Text" info="99+" />
+</jy-grid>
 ```
 
 ## API

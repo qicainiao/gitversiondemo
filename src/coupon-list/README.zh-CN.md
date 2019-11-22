@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { CouponCell, CouponList } from 'vant';
+import { CouponCell, CouponList } from 'jyt';
 
 Vue.use(CouponCell).use(CouponList);
 ```
@@ -15,22 +15,22 @@ Vue.use(CouponCell).use(CouponList);
 
 ```html
 <!-- 优惠券单元格 -->
-<van-coupon-cell
+<jy-coupon-cell
   :coupons="coupons"
   :chosen-coupon="chosenCoupon"
   @click="showList = true"
 />
 
 <!-- 优惠券列表 -->
-<van-popup v-model="showList" position="bottom">
-  <van-coupon-list
+<jy-popup v-model="showList" position="bottom">
+  <jy-coupon-list
     :coupons="coupons"
     :chosen-coupon="chosenCoupon"
     :disabled-coupons="disabledCoupons"
     @change="onChange"
     @exchange="onExchange"
   />
-</van-popup>
+</jy-popup>
 ```
 
 ```javascript
@@ -100,7 +100,7 @@ export default {
 | input-placeholder | 输入框文字提示 | *string* | `请输入优惠码` | - |
 | show-exchange-bar | 是否展示兑换栏 | *boolean* | `true` | - |
 | currency | 货币符号 |  *string* | `¥` | - |
-| empty-image | 列表为空时的占位图 | *string* | `https://img.yzcdn.cn/vant/coupon-empty.png` | 2.1.0 |
+| empty-image | 列表为空时的占位图 | *string* | `https://img.yzcdn.cn/jyt/coupon-empty.png` | 2.1.0 |
 
 ### CouponList Events
 

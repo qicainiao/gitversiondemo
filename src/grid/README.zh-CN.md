@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Grid, GridItem } from 'vant';
+import { Grid, GridItem } from 'jyt';
 
 Vue.use(Grid).use(GridItem);
 ```
@@ -20,12 +20,12 @@ Vue.use(Grid).use(GridItem);
 通过`icon`属性设置格子内的图标，`text`属性设置文字内容
 
 ```html
-<van-grid>
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-</van-grid>
+<jy-grid>
+  <jy-grid-item icon="photo-o" text="文字" />
+  <jy-grid-item icon="photo-o" text="文字" />
+  <jy-grid-item icon="photo-o" text="文字" />
+  <jy-grid-item icon="photo-o" text="文字" />
+</jy-grid>
 ```
 
 ### 自定义列数
@@ -33,14 +33,14 @@ Vue.use(Grid).use(GridItem);
 默认一行展示四个格子，可以通过`column-num`自定义列数
 
 ```html
-<van-grid :column-num="3">
-  <van-grid-item
+<jy-grid :column-num="3">
+  <jy-grid-item
     v-for="value in 6"
     :key="value"
     icon="photo-o"
     text="文字"
   />
-</van-grid>
+</jy-grid>
 ```
 
 ### 自定义内容
@@ -48,17 +48,17 @@ Vue.use(Grid).use(GridItem);
 通过插槽可以自定义格子展示的内容
 
 ```html
-<van-grid :border="false" :column-num="3">
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-  </van-grid-item>
-</van-grid>
+<jy-grid :border="false" :column-num="3">
+  <jy-grid-item>
+    <jy-image src="https://img.yzcdn.cn/jyt/apple-1.jpg" />
+  </jy-grid-item>
+  <jy-grid-item>
+    <jy-image src="https://img.yzcdn.cn/jyt/apple-2.jpg" />
+  </jy-grid-item>
+  <jy-grid-item>
+    <jy-image src="https://img.yzcdn.cn/jyt/apple-3.jpg" />
+  </jy-grid-item>
+</jy-grid>
 ```
 
 ### 正方形格子
@@ -66,14 +66,14 @@ Vue.use(Grid).use(GridItem);
 设置`square`属性后，格子的高度会和宽度保持一致
 
 ```html
-<van-grid square>
-  <van-grid-item
+<jy-grid square>
+  <jy-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="文字"
   />
-</van-grid>
+</jy-grid>
 ```
 
 ### 格子间距
@@ -81,14 +81,14 @@ Vue.use(Grid).use(GridItem);
 通过`gutter`属性设置格子之间的距离
 
 ```html
-<van-grid :gutter="10">
-  <van-grid-item
+<jy-grid :gutter="10">
+  <jy-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="文字"
   />
-</van-grid>
+</jy-grid>
 ```
 
 ### 页面导航
@@ -96,10 +96,10 @@ Vue.use(Grid).use(GridItem);
 通过`to`属性设置`vue-router`跳转链接，通过`url`属性设置 URL 跳转链接
 
 ```html
-<van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="路由跳转" to="/" />
-  <van-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
-</van-grid>
+<jy-grid clickable :column-num="2">
+  <jy-grid-item icon="home-o" text="路由跳转" to="/" />
+  <jy-grid-item icon="search" text="URL 跳转" url="/jyt/mobile.html" />
+</jy-grid>
 ```
 
 ### 提示信息
@@ -107,10 +107,10 @@ Vue.use(Grid).use(GridItem);
 设置`dot`属性后，会在图标右上角展示一个小红点。设置`info`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<van-grid :column-num="2">
-  <van-grid-item icon="home-o" text="文字" dot />
-  <van-grid-item icon="search" text="文字" info="99+" />
-</van-grid>
+<jy-grid :column-num="2">
+  <jy-grid-item icon="home-o" text="文字" dot />
+  <jy-grid-item icon="search" text="文字" info="99+" />
+</jy-grid>
 ```
 
 ## API

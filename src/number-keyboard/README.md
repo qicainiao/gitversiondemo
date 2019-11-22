@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { NumberKeyboard } from 'vant';
+import { NumberKeyboard } from 'jyt';
 
 Vue.use(NumberKeyboard);
 ```
@@ -14,11 +14,11 @@ Vue.use(NumberKeyboard);
 ### Default Style
 
 ```html
-<van-button @touchstart.stop="show = true">
+<jy-button @touchstart.stop="show = true">
   Show Keyboard
-</van-button>
+</jy-button>
 
-<van-number-keyboard
+<jy-number-keyboard
   :show="show"
   extra-key="."
   close-button-text="Close"
@@ -50,7 +50,7 @@ export default {
 ### Custom Style
 
 ```html
-<van-number-keyboard
+<jy-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -64,14 +64,14 @@ export default {
 ### Bind Value
 
 ```html
-<van-field
+<jy-field
   readonly
   clickable
   :value="value"
   @touchstart.native.stop="show = true"
 />
 
-<van-number-keyboard
+<jy-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"

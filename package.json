@@ -1,6 +1,6 @@
 {
-  "name": "juanziaaa",
-  "version": "1.0.1",
+  "name": "jyh5vlib",
+  "version": "1.0.2",
   "description": "Mobile UI Components built on Vue",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -47,7 +47,7 @@
     "vue",
     "component"
   ],
-  "author": "youzanfe",
+  "author": "zhijuanli",
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "7.x",

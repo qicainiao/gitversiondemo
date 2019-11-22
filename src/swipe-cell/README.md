@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { SwipeCell } from 'vant';
+import { SwipeCell } from 'jyt';
 
 Vue.use(SwipeCell);
 ```
@@ -14,34 +14,34 @@ Vue.use(SwipeCell);
 ### Basic Usage
 
 ```html
-<van-swipe-cell>
+<jy-swipe-cell>
   <template slot="left">
-    <van-button square type="primary" text="Select" />
+    <jy-button square type="primary" text="Select" />
   </template>
 
-  <van-cell :border="false" title="Cell" value="Cell Content" />
+  <jy-cell :border="false" title="Cell" value="Cell Content" />
 
   <template slot="right">
-    <van-button square type="danger" text="Delete" />
-    <van-button square type="primary" text="Collect"/>
+    <jy-button square type="danger" text="Delete" />
+    <jy-button square type="primary" text="Collect"/>
   </template>
-</van-swipe-cell>
+</jy-swipe-cell>
 ```
 
 ### Async close
 
 ```html
-<van-swipe-cell :on-close="onClose">
+<jy-swipe-cell :on-close="onClose">
   <template slot="left">
-    <van-button square type="primary" text="Select" />
+    <jy-button square type="primary" text="Select" />
   </template>
 
-  <van-cell :border="false" title="Cell" value="Cell Content" />
+  <jy-cell :border="false" title="Cell" value="Cell Content" />
 
   <template slot="right">
-    <van-button square type="danger" text="Delete" />
+    <jy-button square type="danger" text="Delete" />
   </template>
-</van-swipe-cell>
+</jy-swipe-cell>
 ```
 
 ```js

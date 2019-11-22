@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Loading } from 'vant';
+import { Loading } from 'jyt';
 
 Vue.use(Loading);
 ```
@@ -14,27 +14,27 @@ Vue.use(Loading);
 ### Type
 
 ```html
-<van-loading />
-<van-loading type="spinner" />
+<jy-loading />
+<jy-loading type="spinner" />
 ```
 
 ### Color
 
 ```html
-<van-loading color="#1989fa" />
-<van-loading type="spinner" color="#1989fa" />
+<jy-loading color="#1989fa" />
+<jy-loading type="spinner" color="#1989fa" />
 ```
 
 ### Text
 
 ```html
-<van-loading size="24px">Loading...</van-loading>
+<jy-loading size="24px">Loading...</jy-loading>
 ```
 
 ### Vertical
 
 ```html
-<van-loading size="24px" vertical>Loading...</van-loading>
+<jy-loading size="24px" vertical>Loading...</jy-loading>
 ```
 
 ## API

@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue';
-import { Sku } from 'vant';
+import { Sku } from 'jyt';
 
 Vue.use(Sku);
 ```
@@ -14,7 +14,7 @@ Vue.use(Sku);
 ### Basic Usage
 
 ```html
-<van-sku
+<jy-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -48,7 +48,7 @@ export default {
 ### Custom Stepper Config
 
 ```html
-<van-sku
+<jy-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -62,10 +62,10 @@ export default {
 />
 ```
 
-### Advanced Usage
+### Adjyced Usage
 
 ```html
-<van-sku
+<jy-sku
   v-model="show"
   stepper-title="Stepper title"
   :sku="sku"
@@ -82,34 +82,34 @@ export default {
 >
   <!-- custom sku-header-price -->
   <template slot="sku-header-price" slot-scope="props">
-    <div class="van-sku__goods-price">
-      <span class="van-sku__price-symbol">￥</span><span class="van-sku__price-num">{{ props.price }}</span>
+    <div class="jy-sku__goods-price">
+      <span class="jy-sku__price-symbol">￥</span><span class="jy-sku__price-num">{{ props.price }}</span>
     </div>
   </template>
 
   <!-- custom sku actions -->
   <template slot="sku-actions" slot-scope="props">
-    <div class="van-sku-actions">
-      <van-button
+    <div class="jy-sku-actions">
+      <jy-button
         square
         size="large"
         type="warning"
         @click="onPointClicked"
       >
         Button
-      </van-button>
+      </jy-button>
       <!-- trigger sku inner event -->
-      <van-button
+      <jy-button
         square
         size="large"
         type="danger"
         @click="props.skuEventBus.$emit('sku:buy')"
       >
         Button
-      </van-button>
+      </jy-button>
     </div>
   </template>
-</van-sku>
+</jy-sku>
 ```
 
 ## API

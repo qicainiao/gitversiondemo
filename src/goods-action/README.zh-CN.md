@@ -8,7 +8,7 @@ import {
   GoodsAction,
   GoodsActionIcon,
   GoodsActionButton
-} from 'vant';
+} from 'jyt';
 
 Vue
   .use(GoodsAction)
@@ -21,12 +21,12 @@ Vue
 ### 基础用法
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="客服" @click="onClickIcon" />
-  <van-goods-action-icon icon="cart-o" text="购物车" @click="onClickIcon" />
-  <van-goods-action-button type="warning" text="加入购物车" @click="onClickButton" />
-  <van-goods-action-button type="danger" text="立即购买" @click="onClickButton" />
-</van-goods-action>
+<jy-goods-action>
+  <jy-goods-action-icon icon="chat-o" text="客服" @click="onClickIcon" />
+  <jy-goods-action-icon icon="cart-o" text="购物车" @click="onClickIcon" />
+  <jy-goods-action-button type="warning" text="加入购物车" @click="onClickButton" />
+  <jy-goods-action-button type="danger" text="立即购买" @click="onClickButton" />
+</jy-goods-action>
 ```
 
 ```javascript
@@ -47,13 +47,13 @@ export default {
 通过`info`属性在图标右上角显示徽标
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="客服" />
-  <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
-  <van-goods-action-icon icon="shop-o" text="店铺" info="12" />
-  <van-goods-action-button type="warning" text="加入购物车" />
-  <van-goods-action-button type="danger" text="立即购买" />
-</van-goods-action>
+<jy-goods-action>
+  <jy-goods-action-icon icon="chat-o" text="客服" />
+  <jy-goods-action-icon icon="cart-o" text="购物车" info="5" />
+  <jy-goods-action-icon icon="shop-o" text="店铺" info="12" />
+  <jy-goods-action-button type="warning" text="加入购物车" />
+  <jy-goods-action-button type="danger" text="立即购买" />
+</jy-goods-action>
 ```
 
 ### 自定义按钮颜色
@@ -61,12 +61,12 @@ export default {
 通过`color`属性可以自定义按钮的颜色，支持传入`linear-gradient`渐变色
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="客服" />
-  <van-goods-action-icon icon="shop-o" text="店铺" />
-  <van-goods-action-button color="#be99ff" type="warning" text="加入购物车" />
-  <van-goods-action-button color="#7232dd" type="danger" text="立即购买" />
-</van-goods-action>
+<jy-goods-action>
+  <jy-goods-action-icon icon="chat-o" text="客服" />
+  <jy-goods-action-icon icon="shop-o" text="店铺" />
+  <jy-goods-action-button color="#be99ff" type="warning" text="加入购物车" />
+  <jy-goods-action-button color="#7232dd" type="danger" text="立即购买" />
+</jy-goods-action>
 ```
 
 ## API
